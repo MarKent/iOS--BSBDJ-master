@@ -1,0 +1,35 @@
+//
+//  MKBSBDJ.pch
+//  百思不得姐
+//
+//  Created by Mark Kent on 16/9/21.
+//  Copyright © 2016年 Mark Kent. All rights reserved.
+//
+
+#ifndef MKBSBDJ_pch
+#define MKBSBDJ_pch
+
+
+/***在#ifdef __OBJC__和#endif之间的内容,只拷贝到OC文件中,不会拷贝到其他语言源代码中***/
+#ifdef __OBJC__
+//打印日志:模拟器测试和真机测试区分开来
+//如果模拟器测试(开发版Debug)用MKLog(...)代替NSLog()打印
+//如果真机调试(发布版Release)用此宏不打印日志,提高性能,但是用NSLog()还会继续打印
+#ifdef DEBUG
+#define MKLog(...) NSLog(__VA_ARGS__)//__VA_ARGS__固定写法表示很多参数
+#else
+#define MKLog(...)
+#endif
+
+//打印方法
+#define MKLogFunc MKLog(@"%s",__func__);
+
+//颜色:RGBA,RGB,随机
+#define MKColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255 blue:(b)/255.0f alpha:(a)/255.0f]
+#define MKColor(r,g,b) MKColorA(r,g,b,255)
+#define MKRandomColor MKColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+#endif
+/***在#ifdef __OBJC__和#endif之间的内容,只拷贝到OC文件中,不会拷贝到其他语言源代码中***/
+
+
+#endif /* MKBSBDJ_pch */
