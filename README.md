@@ -33,3 +33,10 @@
 /** 更换TabBar 系统为只读 采用KVC取值**/
 [self setValue:[[MKTabBar alloc] init] forKey:@"tabBar"];
 ```
+--- 
+2016.9.27
+- 一般视图先设置尺寸,再设置中心点,不然位置不对
+- 添加一个UIView的分类,用来简化对视图控件等尺寸的取值,如:
+```objc
+self.view.mk_width = 100;
+```
