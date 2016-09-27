@@ -21,6 +21,20 @@
     [super viewDidLoad];
     
     /**** 设置UITabBarItem文字属性-选中与被选中 ****/
+    [self setTabBarItemTitleArrts];
+    
+    /**** 添加子控制器 ****/
+    [self addChildsViewControllers];
+    
+    /** 更换系统TabBar 系统为只读 采用KVC取值**/
+    [self changeTabBar];
+}
+
+/**
+ 设置UITabBarItem文字属性
+ */
+- (void)setTabBarItemTitleArrts {
+
     NSMutableDictionary *normalDic = [NSMutableDictionary dictionary];
     normalDic = [@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor grayColor]}
                  mutableCopy];
@@ -29,9 +43,12 @@
     NSMutableDictionary *selectedDic = [NSMutableDictionary dictionary];
     selectedDic = [@{NSForegroundColorAttributeName:[UIColor blackColor]} mutableCopy];
     [[UITabBarItem appearance] setTitleTextAttributes:selectedDic forState:UIControlStateSelected];
-    
-    
-    /**** 添加子控制器 ****/
+}
+/**
+ 添加子控制器
+ */
+- (void)addChildsViewControllers {
+
     [self setupChildViewController:[[UITableViewController alloc] init]
                              title:@"精华"
                          imageName:@"tabBar_essence_icon"
@@ -48,11 +65,7 @@
                              title:@"我"
                          imageName:@"tabBar_me_icon"
                  selectedImageName:@"tabBar_me_click_icon"];
-    
-    /** 更换TabBar 系统为只读 采用KVC取值**/
-    [self setValue:[[MKTabBar alloc] init] forKey:@"tabBar"];
 }
-
 /**
  初始化一个子控制器
 
@@ -76,6 +89,13 @@
     
 }
 
+/**
+ 更换系统TabBar
+ */
+- (void)changeTabBar {
+
+   [self setValue:[[MKTabBar alloc] init] forKey:@"tabBar"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

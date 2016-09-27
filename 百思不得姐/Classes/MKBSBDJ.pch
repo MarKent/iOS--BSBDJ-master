@@ -12,6 +12,10 @@
 
 /***在#ifdef __OBJC__和#endif之间的内容,只拷贝到OC文件中,不会拷贝到其他语言源代码中***/
 #ifdef __OBJC__
+
+//头文件
+#import "UIView+SizeDecirbe.h"
+
 //打印日志:模拟器测试和真机测试区分开来
 //如果模拟器测试(开发版Debug)用MKLog(...)代替NSLog()打印
 //如果真机调试(发布版Release)用此宏不打印日志,提高性能,但是用NSLog()还会继续打印

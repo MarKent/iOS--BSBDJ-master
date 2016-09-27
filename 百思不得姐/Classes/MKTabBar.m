@@ -38,28 +38,28 @@
     [super layoutSubviews];
     
     //标签栏按钮尺寸
-    CGFloat btnItemW = self.bounds.size.width/5;
-    CGFloat btnItemH = self.bounds.size.height;
-    CGFloat btnItemY = 0;
-    int index = 0;
+    CGFloat tabBarItemW = self.mk_width/5;
+    CGFloat tabBarItemH = self.mk_height;
+    CGFloat tabBarItemY = 0;
+    int tabBarItemIndex = 0;
     for (UIView *subView in self.subviews) {
         
         //过滤不是标签栏按钮的类
         if (subView.class != NSClassFromString(@"UITabBarButton")) continue;
         
         //重新布局
-        subView.frame = CGRectMake(index*btnItemW, btnItemY, btnItemW, btnItemH);
+        subView.frame = CGRectMake(tabBarItemIndex*tabBarItemW, tabBarItemY, tabBarItemW, tabBarItemH);
         //空出中间按钮位置
-        if (index >= 2) {
+        if (tabBarItemIndex >= 2) {
             
-            subView.frame = CGRectMake(index*btnItemW+btnItemW, btnItemY, btnItemW, btnItemH);
+            subView.frame = CGRectMake(tabBarItemIndex*tabBarItemW+tabBarItemW, tabBarItemY, tabBarItemW, tabBarItemH);
         }
         //索引增加
-        index++;
+        tabBarItemIndex++;
     }
-    //发布按钮尺寸
-    self.publicBtn.bounds = CGRectMake(0, 0, btnItemW, btnItemH);
-    self.publicBtn.center = CGPointMake(self.bounds.size.width/2, btnItemH/2);
+    //发布按钮尺寸:注意设置顺序,一般先尺寸再中心点
+    self.publicBtn.bounds = CGRectMake(0, 0, tabBarItemW, tabBarItemH);
+    self.publicBtn.center = CGPointMake(self.mk_width/2, tabBarItemH/2);
 }
 
 #pragma mark - 按钮点击
