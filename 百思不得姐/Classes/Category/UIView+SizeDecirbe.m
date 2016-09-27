@@ -29,7 +29,7 @@
 /**
  Height
  
- @param mk_height 自定义宽度
+ @param mk_height 自定义高度
  */
 - (void)setMk_height:(CGFloat)mk_height {
     
@@ -44,7 +44,7 @@
 /**
  X
  
- @param mk_X 自定义宽度
+ @param mk_X 自定义x坐标
  */
 - (void)setMk_X:(CGFloat)mk_X {
     
@@ -59,7 +59,7 @@
 /**
  Y
  
- @param mk_Y 自定义宽度
+ @param mk_Y 自定义y坐标
  */
 - (void)setMk_Y:(CGFloat)mk_Y {
     
@@ -89,7 +89,7 @@
 /**
  Origin
  
- @param mk_origin 自定义宽度
+ @param mk_origin 自定义位置
  */
 - (void)setMk_origin:(CGPoint)mk_origin {
     
@@ -100,5 +100,35 @@
 - (CGPoint)mk_origin {
     
     return self.frame.origin;
+}
+/**
+ CenterX
+ 
+ @param mk_centerX 自定义中心点X坐标
+ */
+- (void)setMk_centerX:(CGFloat)mk_centerX {
+    
+    CGPoint center = self.center;
+    center.x = mk_centerX;
+    self.center = center;
+}
+- (CGFloat)mk_centerX {
+    
+    return self.center.x;
+}
+/**
+ CenterY
+ 
+ @param mk_centerY 自定义中心点Y坐标
+ */
+- (void)setMk_centerY:(CGFloat)mk_centerY {
+    
+    CGPoint center = self.center;
+    center.y = mk_centerY;
+    self.center = center;
+}
+- (CGFloat)mk_centerY {
+    
+    return self.center.y;
 }
 @end

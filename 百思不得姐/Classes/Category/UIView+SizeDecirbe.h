@@ -16,5 +16,6 @@
 @property (nonatomic , assign)CGFloat mk_Y;
 @property (nonatomic , assign)CGSize  mk_size;
 @property (nonatomic , assign)CGPoint mk_origin;
-
+@property (nonatomic , assign)CGFloat mk_centerX;
+@property (nonatomic , assign)CGFloat mk_centerY;
 @end

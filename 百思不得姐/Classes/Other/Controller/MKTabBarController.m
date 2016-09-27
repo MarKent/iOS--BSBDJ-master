@@ -9,6 +9,10 @@
 
 #import "MKTabBarController.h"
 #import "MKTabBar.h"
+#import "MKEssenceViewController.h"
+#import "MKNewViewController.h"
+#import "MKFollowViewController.h"
+#import "MKMeViewController.h"
 
 @interface MKTabBarController ()
 
@@ -49,19 +53,22 @@
  */
 - (void)addChildsViewControllers {
 
-    [self setupChildViewController:[[UITableViewController alloc] init]
+    [self setupChildViewController:[[MKEssenceViewController alloc] init]
                              title:@"精华"
                          imageName:@"tabBar_essence_icon"
                  selectedImageName:@"tabBar_essence_click_icon"];
-    [self setupChildViewController:[[UITableViewController alloc] init]
+    
+    [self setupChildViewController:[[MKNewViewController alloc] init]
                              title:@"新帖"
                          imageName:@"tabBar_new_icon"
                  selectedImageName:@"tabBar_new_click_icon"];
-    [self setupChildViewController:[[UITableViewController alloc] init]
+    
+    [self setupChildViewController:[[MKFollowViewController alloc] init]
                              title:@"关注"
                          imageName:@"tabBar_friendTrends_icon"
                  selectedImageName:@"tabBar_friendTrends_click_icon"];
-    [self setupChildViewController:[[UITableViewController alloc] init]
+    
+    [self setupChildViewController:[[MKMeViewController alloc] init]
                              title:@"我"
                          imageName:@"tabBar_me_icon"
                  selectedImageName:@"tabBar_me_click_icon"];
@@ -76,7 +83,6 @@
  */
 - (void)setupChildViewController:(UIViewController *)vC title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName{
 
-    vC.view.backgroundColor = MKRandomColor;
     vC.title = title;
     //图片传nil或者@""会报错,要判断
     if (imageName.length) {

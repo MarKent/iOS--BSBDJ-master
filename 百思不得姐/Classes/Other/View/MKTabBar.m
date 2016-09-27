@@ -58,8 +58,10 @@
         tabBarItemIndex++;
     }
     //发布按钮尺寸:注意设置顺序,一般先尺寸再中心点
-    self.publicBtn.bounds = CGRectMake(0, 0, tabBarItemW, tabBarItemH);
-    self.publicBtn.center = CGPointMake(self.mk_width/2, tabBarItemH/2);
+    self.publicBtn.mk_width = tabBarItemW;
+    self.publicBtn.mk_height = tabBarItemH;
+    self.publicBtn.mk_centerX = self.mk_width/2;
+    self.publicBtn.mk_centerY = tabBarItemH/2;
 }
 
 #pragma mark - 按钮点击

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E370CC11D944D75007F618E /* MKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E370CC01D944D75007F618E /* MKTabBar.m */; };
-		3EBF4B0C1D9A8F0E00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B0B1D9A8F0E00260EFF /* UIView+SizeDecirbe.m */; };
+		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
+		3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */; };
+		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
+		3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */; };
+		3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B461D9AC77C00260EFF /* MKNewViewController.m */; };
+		3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B4B1D9AC77C00260EFF /* AppDelegate.m */; };
+		3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */; };
+		3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B521D9AC77C00260EFF /* MKTabBar.m */; };
 		3ED223DB1D916F66005A3EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223DA1D916F66005A3EAC /* main.m */; };
-		3ED223DE1D916F66005A3EAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223DD1D916F66005A3EAC /* AppDelegate.m */; };
 		3ED223E41D916F66005A3EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E21D916F66005A3EAC /* Main.storyboard */; };
 		3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E51D916F66005A3EAC /* Assets.xcassets */; };
 		3ED223F41D916F66005A3EAC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223F31D916F66005A3EAC /* _____Tests.m */; };
 		3ED223FF1D916F66005A3EAC /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223FE1D916F66005A3EAC /* _____UITests.m */; };
-		3ED2240F1D92C388005A3EAC /* MKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED2240E1D92C388005A3EAC /* MKTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +41,24 @@
 
 /* Begin PBXFileReference section */
 		3E3302DD1D92E3C8000C7D10 /* MKBSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKBSBDJ.pch; path = Classes/MKBSBDJ.pch; sourceTree = "<group>"; };
-		3E370CBF1D944D75007F618E /* MKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabBar.h; sourceTree = "<group>"; };
-		3E370CC01D944D75007F618E /* MKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBar.m; sourceTree = "<group>"; };
-		3EBF4B0A1D9A8F0E00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
-		3EBF4B0B1D9A8F0E00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
+		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
+		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
+		3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
+		3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
+		3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFollowViewController.h; sourceTree = "<group>"; };
+		3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFollowViewController.m; sourceTree = "<group>"; };
+		3EBF4B3F1D9AC77C00260EFF /* MKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeViewController.h; sourceTree = "<group>"; };
+		3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeViewController.m; sourceTree = "<group>"; };
+		3EBF4B451D9AC77C00260EFF /* MKNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNewViewController.h; sourceTree = "<group>"; };
+		3EBF4B461D9AC77C00260EFF /* MKNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNewViewController.m; sourceTree = "<group>"; };
+		3EBF4B4A1D9AC77C00260EFF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EBF4B4B1D9AC77C00260EFF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EBF4B4D1D9AC77C00260EFF /* MKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabBarController.h; sourceTree = "<group>"; };
+		3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBarController.m; sourceTree = "<group>"; };
+		3EBF4B511D9AC77C00260EFF /* MKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabBar.h; sourceTree = "<group>"; };
+		3EBF4B521D9AC77C00260EFF /* MKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBar.m; sourceTree = "<group>"; };
 		3ED223D61D916F66005A3EAC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223DA1D916F66005A3EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3ED223DC1D916F66005A3EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		3ED223DD1D916F66005A3EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		3ED223E31D916F66005A3EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ED223E51D916F66005A3EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED223EA1D916F66005A3EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,8 +68,6 @@
 		3ED223FA1D916F66005A3EAC /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223FE1D916F66005A3EAC /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		3ED224001D916F66005A3EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ED2240D1D92C388005A3EAC /* MKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabBarController.h; sourceTree = "<group>"; };
-		3ED2240E1D92C388005A3EAC /* MKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,184 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EBF4B2E1D9AC77C00260EFF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */,
+				3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3EBF4B311D9AC77C00260EFF /* Essence-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B321D9AC77C00260EFF /* Controller */,
+				3EBF4B351D9AC77C00260EFF /* Model */,
+				3EBF4B361D9AC77C00260EFF /* View */,
+			);
+			path = "Essence-关注";
+			sourceTree = "<group>";
+		};
+		3EBF4B321D9AC77C00260EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */,
+				3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBF4B351D9AC77C00260EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBF4B361D9AC77C00260EFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EBF4B371D9AC77C00260EFF /* Follow-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B381D9AC77C00260EFF /* Controller */,
+				3EBF4B3B1D9AC77C00260EFF /* Model */,
+				3EBF4B3C1D9AC77C00260EFF /* View */,
+			);
+			path = "Follow-关注";
+			sourceTree = "<group>";
+		};
+		3EBF4B381D9AC77C00260EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */,
+				3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBF4B3B1D9AC77C00260EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBF4B3C1D9AC77C00260EFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EBF4B3D1D9AC77C00260EFF /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B3E1D9AC77C00260EFF /* Controller */,
+				3EBF4B411D9AC77C00260EFF /* Model */,
+				3EBF4B421D9AC77C00260EFF /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		3EBF4B3E1D9AC77C00260EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B3F1D9AC77C00260EFF /* MKMeViewController.h */,
+				3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBF4B411D9AC77C00260EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBF4B421D9AC77C00260EFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EBF4B431D9AC77C00260EFF /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B441D9AC77C00260EFF /* Controller */,
+				3EBF4B471D9AC77C00260EFF /* Model */,
+				3EBF4B481D9AC77C00260EFF /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		3EBF4B441D9AC77C00260EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B451D9AC77C00260EFF /* MKNewViewController.h */,
+				3EBF4B461D9AC77C00260EFF /* MKNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBF4B471D9AC77C00260EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBF4B481D9AC77C00260EFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EBF4B491D9AC77C00260EFF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B4A1D9AC77C00260EFF /* AppDelegate.h */,
+				3EBF4B4B1D9AC77C00260EFF /* AppDelegate.m */,
+				3EBF4B4C1D9AC77C00260EFF /* Controller */,
+				3EBF4B4F1D9AC77C00260EFF /* Model */,
+				3EBF4B501D9AC77C00260EFF /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3EBF4B4C1D9AC77C00260EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B4D1D9AC77C00260EFF /* MKTabBarController.h */,
+				3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBF4B4F1D9AC77C00260EFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBF4B501D9AC77C00260EFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EBF4B511D9AC77C00260EFF /* MKTabBar.h */,
+				3EBF4B521D9AC77C00260EFF /* MKTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3ED223CD1D916F66005A3EAC = {
 			isa = PBXGroup;
 			children = (
@@ -145,14 +335,12 @@
 		3ED2240C1D917296005A3EAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3ED223DC1D916F66005A3EAC /* AppDelegate.h */,
-				3ED223DD1D916F66005A3EAC /* AppDelegate.m */,
-				3ED2240D1D92C388005A3EAC /* MKTabBarController.h */,
-				3ED2240E1D92C388005A3EAC /* MKTabBarController.m */,
-				3E370CBF1D944D75007F618E /* MKTabBar.h */,
-				3E370CC01D944D75007F618E /* MKTabBar.m */,
-				3EBF4B0A1D9A8F0E00260EFF /* UIView+SizeDecirbe.h */,
-				3EBF4B0B1D9A8F0E00260EFF /* UIView+SizeDecirbe.m */,
+				3EBF4B2E1D9AC77C00260EFF /* Category */,
+				3EBF4B311D9AC77C00260EFF /* Essence-关注 */,
+				3EBF4B431D9AC77C00260EFF /* New-新帖 */,
+				3EBF4B371D9AC77C00260EFF /* Follow-关注 */,
+				3EBF4B3D1D9AC77C00260EFF /* Me-我 */,
+				3EBF4B491D9AC77C00260EFF /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -291,11 +479,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED223DE1D916F66005A3EAC /* AppDelegate.m in Sources */,
-				3E370CC11D944D75007F618E /* MKTabBar.m in Sources */,
+				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
+				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
+				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
+				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
+				3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */,
+				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
+				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
-				3EBF4B0C1D9A8F0E00260EFF /* UIView+SizeDecirbe.m in Sources */,
-				3ED2240F1D92C388005A3EAC /* MKTabBarController.m in Sources */,
+				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
