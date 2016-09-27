@@ -53,22 +53,22 @@
  */
 - (void)addChildsViewControllers {
 
-    [self setupChildViewController:[[MKEssenceViewController alloc] init]
+    [self setupChildViewController:[[UINavigationController alloc] initWithRootViewController:[[MKEssenceViewController alloc]init]]
                              title:@"精华"
                          imageName:@"tabBar_essence_icon"
                  selectedImageName:@"tabBar_essence_click_icon"];
     
-    [self setupChildViewController:[[MKNewViewController alloc] init]
+    [self setupChildViewController:[[UINavigationController alloc] initWithRootViewController:[[MKNewViewController alloc]init]]
                              title:@"新帖"
                          imageName:@"tabBar_new_icon"
                  selectedImageName:@"tabBar_new_click_icon"];
     
-    [self setupChildViewController:[[MKFollowViewController alloc] init]
+    [self setupChildViewController:[[UINavigationController alloc] initWithRootViewController:[[MKFollowViewController alloc]init]]
                              title:@"关注"
                          imageName:@"tabBar_friendTrends_icon"
                  selectedImageName:@"tabBar_friendTrends_click_icon"];
     
-    [self setupChildViewController:[[MKMeViewController alloc] init]
+    [self setupChildViewController:[[UINavigationController alloc] initWithRootViewController:[[MKMeViewController alloc]init]]
                              title:@"我"
                          imageName:@"tabBar_me_icon"
                  selectedImageName:@"tabBar_me_click_icon"];

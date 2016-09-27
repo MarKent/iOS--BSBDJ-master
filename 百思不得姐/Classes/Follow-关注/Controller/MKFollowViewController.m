@@ -16,24 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.view.backgroundColor = MKCommonBgColor;
+    
+    //三级控制器中不建议设置导航栏标题直接使用self.title
+    self.navigationItem.title = @"我的关注";
+    
+    //设置左侧按钮
+    UIButton *followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [followBtn setImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
+    [followBtn setImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
+    //不建议直接使用button.imageView.image.size
+    [followBtn sizeToFit];
+    [followBtn addTarget:self action:@selector(followClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:followBtn];
+}
+
+#pragma mark - 按钮点击事件
+- (void)followClick {
+    
     MKLogFunc
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

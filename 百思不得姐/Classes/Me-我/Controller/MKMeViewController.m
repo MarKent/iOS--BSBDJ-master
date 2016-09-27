@@ -16,24 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.view.backgroundColor = MKCommonBgColor;
+    
+    //标题
+    self.navigationItem.title = @"我的";
+    
+    //设置按钮
+    UIButton *settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [settingBtn setImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
+    [settingBtn setImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
+    [settingBtn sizeToFit];
+    [settingBtn addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
+    //夜间按钮
+    UIButton *moonBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
+    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
+    [moonBtn sizeToFit];
+    [moonBtn addTarget:self action:@selector(moonClick) forControlEvents:UIControlEventTouchUpInside];
+    //添加到右侧item上
+    UIBarButtonItem *setItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
+    UIBarButtonItem *moonItem = [[UIBarButtonItem alloc] initWithCustomView:moonBtn];
+    self.navigationItem.rightBarButtonItems = @[setItem,moonItem];
+}
+
+#pragma mark - 按钮点击
+- (void)settingClick {
+
     MKLogFunc
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)moonClick {
+    
+    MKLogFunc
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -41,3 +41,10 @@
 self.view.mk_width = 100;
 ```
 - 一般在标签控制器中不要设置公用的子控制器的背景颜色等属性,这样可以利用懒加载
+- 通过获得指定某种状态下的图片,来设置尺寸,不建议直接使用button.imageView.image.size,获取标题内容颜色等,与之相同
+```objc
+[tagBtn sizeToFit];
+//tagBtn.mk_size = [UIImage imageNamed:@"MainTagSubIcon"].size;
+//tagBtn.mk_size = [tagBtn imageForState:UIControlStateNormal].size;
+```
+- 三级控制器中不建议设置导航栏标题直接使用<self.title>
