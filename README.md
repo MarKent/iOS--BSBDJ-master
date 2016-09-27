@@ -47,4 +47,4 @@ self.view.mk_width = 100;
 //tagBtn.mk_size = [UIImage imageNamed:@"MainTagSubIcon"].size;
 //tagBtn.mk_size = [tagBtn imageForState:UIControlStateNormal].size;
 ```
-- 三级控制器中不建议设置导航栏标题直接使用<self.title>
+- 三级控制器中不建议设置导航栏标题直接使用`self.title`
