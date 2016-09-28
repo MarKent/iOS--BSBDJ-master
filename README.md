@@ -63,7 +63,8 @@ self.view.mk_width = 100;
 ```
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 ```
-方法中自定义返回按钮样式,统一共有的需求
+
+- 方法中自定义返回按钮样式,统一共有的需求
 	- 代码如下:
 	
 ```objc
