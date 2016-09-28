@@ -7,6 +7,7 @@
 //
 
 #import "MKFollowViewController.h"
+#import "MKRecomendFollowViewController.h"
 
 @interface MKFollowViewController ()
 
@@ -30,6 +31,9 @@
 - (void)followClick {
     
     MKLogFunc
+    MKRecomendFollowViewController *recomendVc = [[MKRecomendFollowViewController alloc] init];
+    recomendVc.view.backgroundColor = MKRandomColor;
+    [self.navigationController pushViewController:recomendVc animated:YES];
 }
 
 

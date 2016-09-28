@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
+		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
+		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
+		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
 		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
 		3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
@@ -44,6 +47,12 @@
 		3E3302DD1D92E3C8000C7D10 /* MKBSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKBSBDJ.pch; path = Classes/MKBSBDJ.pch; sourceTree = "<group>"; };
 		3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
 		3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
+		3E6C41571D9C388200C4155E /* MKRecomendFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecomendFollowViewController.h; sourceTree = "<group>"; };
+		3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecomendFollowViewController.m; sourceTree = "<group>"; };
+		3E6C415A1D9C3B5000C4155E /* MKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNavigationController.h; sourceTree = "<group>"; };
+		3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNavigationController.m; sourceTree = "<group>"; };
+		3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSettingViewController.h; sourceTree = "<group>"; };
+		3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSettingViewController.m; sourceTree = "<group>"; };
 		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
 		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
 		3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
@@ -157,6 +166,8 @@
 			children = (
 				3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */,
 				3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */,
+				3E6C41571D9C388200C4155E /* MKRecomendFollowViewController.h */,
+				3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +201,8 @@
 			children = (
 				3EBF4B3F1D9AC77C00260EFF /* MKMeViewController.h */,
 				3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */,
+				3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */,
+				3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +271,8 @@
 			children = (
 				3EBF4B4D1D9AC77C00260EFF /* MKTabBarController.h */,
 				3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */,
+				3E6C415A1D9C3B5000C4155E /* MKNavigationController.h */,
+				3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,6 +432,7 @@
 				TargetAttributes = {
 					3ED223D51D916F66005A3EAC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YPV45H24V3;
 						ProvisioningStyle = Automatic;
 					};
 					3ED223EE1D916F66005A3EAC = {
@@ -486,6 +502,7 @@
 			files = (
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
+				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
 				3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
 				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
@@ -494,6 +511,8 @@
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
+				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
+				3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YPV45H24V3;
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/MKBSBDJ.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -651,7 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YPV45H24V3;
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/MKBSBDJ.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
