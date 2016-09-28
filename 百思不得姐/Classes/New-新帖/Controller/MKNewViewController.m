@@ -23,13 +23,7 @@
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     //设置左侧按钮
-    UIButton *tagBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [tagBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    //不建议直接使用button.imageView.image.size
-    [tagBtn sizeToFit];
-    [tagBtn addTarget:self action:@selector(tagClick) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagBtn];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
 }
 
 #pragma mark - 按钮点击事件

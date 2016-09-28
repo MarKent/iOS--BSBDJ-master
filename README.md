@@ -48,3 +48,7 @@ self.view.mk_width = 100;
 //tagBtn.mk_size = [tagBtn imageForState:UIControlStateNormal].size;
 ```
 - 三级控制器中不建议设置导航栏标题直接使用`self.title`
+
+# 2016.9.28
+- 一般抽取某些公用的功能时,先考虑分类,再考虑写新的类	
+

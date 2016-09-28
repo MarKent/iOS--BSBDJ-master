@@ -15,6 +15,7 @@
 
 //头文件
 #import "UIView+SizeDecirbe.h"
+#import "UIBarButtonItem+MKCommonBarButtonItem.h"
 
 //打印日志:模拟器测试和真机测试区分开来
 //如果模拟器测试(开发版Debug)用MKLog(...)代替NSLog()打印

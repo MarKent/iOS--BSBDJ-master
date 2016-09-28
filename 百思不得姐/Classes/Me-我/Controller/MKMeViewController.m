@@ -23,20 +23,8 @@
     self.navigationItem.title = @"我的";
     
     //设置按钮
-    UIButton *settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [settingBtn setImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [settingBtn setImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    [settingBtn sizeToFit];
-    [settingBtn addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
-    //夜间按钮
-    UIButton *moonBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [moonBtn setImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    [moonBtn sizeToFit];
-    [moonBtn addTarget:self action:@selector(moonClick) forControlEvents:UIControlEventTouchUpInside];
-    //添加到右侧item上
-    UIBarButtonItem *setItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
-    UIBarButtonItem *moonItem = [[UIBarButtonItem alloc] initWithCustomView:moonBtn];
+    UIBarButtonItem *setItem = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
     self.navigationItem.rightBarButtonItems = @[setItem,moonItem];
 }
 

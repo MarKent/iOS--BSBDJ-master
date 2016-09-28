@@ -23,13 +23,7 @@
     self.navigationItem.title = @"我的关注";
     
     //设置左侧按钮
-    UIButton *followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [followBtn setImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
-    [followBtn setImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
-    //不建议直接使用button.imageView.image.size
-    [followBtn sizeToFit];
-    [followBtn addTarget:self action:@selector(followClick) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:followBtn];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
 }
 
 #pragma mark - 按钮点击事件

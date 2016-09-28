@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
 		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
 		3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		3E3302DD1D92E3C8000C7D10 /* MKBSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKBSBDJ.pch; path = Classes/MKBSBDJ.pch; sourceTree = "<group>"; };
+		3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
+		3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
 		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
 		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
 		3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 			children = (
 				3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */,
 				3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */,
+				3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */,
+				3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -335,11 +340,11 @@
 		3ED2240C1D917296005A3EAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3EBF4B2E1D9AC77C00260EFF /* Category */,
 				3EBF4B311D9AC77C00260EFF /* Essence-关注 */,
 				3EBF4B431D9AC77C00260EFF /* New-新帖 */,
 				3EBF4B371D9AC77C00260EFF /* Follow-关注 */,
 				3EBF4B3D1D9AC77C00260EFF /* Me-我 */,
+				3EBF4B2E1D9AC77C00260EFF /* Category */,
 				3EBF4B491D9AC77C00260EFF /* Other */,
 			);
 			path = Classes;
@@ -481,6 +486,7 @@
 			files = (
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
+				3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
 				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
 				3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */,
