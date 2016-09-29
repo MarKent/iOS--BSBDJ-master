@@ -111,4 +111,17 @@ self.interactivePopGestureRecognizer.delegate = self;
 
 ```
 
+# frame和bounds
+- frame:以父视图坐标系为标准,定义某控件位置和尺寸
+- bounds:以某视图里的内容起点为坐标系起点,定义某视图位置和尺寸
+  - 其中bounds.origin = contentOffSet
+
+## 系统对于UIScrollView在三级控制器中的自动偏移
+- iOS7之后,对于三级控制器框架而言,会对第一个加载在控制器上的UIScrollerView进行默认的上下偏移
+  `contentInset = UIEdgeInset(64,0,49,0)`
+  
+- 若要取消该效果,则执行:
+```
+self.automan....= YES;
+```
 
