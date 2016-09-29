@@ -32,6 +32,17 @@
     return _publicBtn;
 }
 
+#pragma mark - 初始化
+- (instancetype)initWithFrame:(CGRect)frame {
+
+    if (self = [super initWithFrame:frame]) {
+        
+        //设置边栏背景
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+    }
+    return self;
+}
+
 #pragma mark - 初始化布局
 - (void)layoutSubviews {
 

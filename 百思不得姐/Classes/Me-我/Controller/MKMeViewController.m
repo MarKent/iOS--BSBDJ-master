@@ -34,7 +34,7 @@
 
     MKLogFunc
     MKSettingViewController *settingVc = [[MKSettingViewController alloc] init];
-    settingVc.view.backgroundColor = MKRandomColor;
+    
     [self.navigationController pushViewController:settingVc animated:YES];
 }
 - (void)moonClick {

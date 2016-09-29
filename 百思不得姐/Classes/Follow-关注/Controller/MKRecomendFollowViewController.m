@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"推荐关注";
+    self.view.backgroundColor = MKCommonBgColor;
     
     
 }

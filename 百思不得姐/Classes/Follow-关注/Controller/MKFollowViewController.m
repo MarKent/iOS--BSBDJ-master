@@ -32,7 +32,6 @@
     
     MKLogFunc
     MKRecomendFollowViewController *recomendVc = [[MKRecomendFollowViewController alloc] init];
-    recomendVc.view.backgroundColor = MKRandomColor;
     [self.navigationController pushViewController:recomendVc animated:YES];
 }
 

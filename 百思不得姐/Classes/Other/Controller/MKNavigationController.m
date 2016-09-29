@@ -8,7 +8,7 @@
 
 #import "MKNavigationController.h"
 
-@interface MKNavigationController ()
+@interface MKNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置导航栏背景
+    self.navigationBar.backIndicatorImage = [UIImage imageNamed:@"navigationbarBackgroundWhite"];
+    
+    //重新响应默认的pop手势
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 /**
@@ -48,6 +53,13 @@
 - (void)backCick {
     
     [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+
+    //当子控制器个数只有一个时,不响应手势
+    return self.childViewControllers.count > 1;
 }
 
 @end

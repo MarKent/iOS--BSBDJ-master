@@ -91,4 +91,24 @@ self.view.mk_width = 100;
     [self popViewControllerAnimated:YES];
 }
 ```	
+# 2016.9.29
+- 因为自定义了UIBarButtonItem,所以通过下面的这方法重新设置默认的pop手势响应 
+
+```
+self.interactivePopGestureRecognizer.delegate = self;
+```
+
+- 在代理方法中判断当前导航控制器的子控制器个数是否>1,如果是则响应默认pop手势,否则不响应.
+  - 如果不判断,则会出现第一个子控制器被pop手势后,第二个子控制器无法push. 代码如下:
+
+```objc
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+
+    //当子控制器个数只有一个时,不响应手势
+    return self.childViewControllers.count > 1;
+}
+
+```
+
 
