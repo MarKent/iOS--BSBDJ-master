@@ -112,7 +112,7 @@ self.interactivePopGestureRecognizer.delegate = self;
 ```
 
 # frame和bounds
-- frame:以父视图坐标系为标准,定义某控件位置和尺寸
+- frame:以父视图内容起点坐标系为标准,定义某控件位置和尺寸
 - bounds:以某视图里的内容起点为坐标系起点,定义某视图位置和尺寸
   - 其中bounds.origin = contentOffSet
 
