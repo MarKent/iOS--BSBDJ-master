@@ -11,8 +11,8 @@
 		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
 		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
+		3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */; };
 		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
-		3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
 		3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */; };
 		3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B461D9AC77C00260EFF /* MKNewViewController.m */; };
@@ -53,10 +53,10 @@
 		3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNavigationController.m; sourceTree = "<group>"; };
 		3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSettingViewController.h; sourceTree = "<group>"; };
 		3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSettingViewController.m; sourceTree = "<group>"; };
+		3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
+		3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
 		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
 		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
-		3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
-		3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
 		3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFollowViewController.h; sourceTree = "<group>"; };
 		3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFollowViewController.m; sourceTree = "<group>"; };
 		3EBF4B3F1D9AC77C00260EFF /* MKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeViewController.h; sourceTree = "<group>"; };
@@ -107,6 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E908E721DA65338006A7CD7 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				3E908E731DA65338006A7CD7 /* Controller */,
+				3E908E761DA65338006A7CD7 /* Model */,
+				3E908E771DA65338006A7CD7 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		3E908E731DA65338006A7CD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */,
+				3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E908E761DA65338006A7CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E908E771DA65338006A7CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3EBF4B2E1D9AC77C00260EFF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,39 +149,6 @@
 				3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		3EBF4B311D9AC77C00260EFF /* Essence-关注 */ = {
-			isa = PBXGroup;
-			children = (
-				3EBF4B321D9AC77C00260EFF /* Controller */,
-				3EBF4B351D9AC77C00260EFF /* Model */,
-				3EBF4B361D9AC77C00260EFF /* View */,
-			);
-			path = "Essence-关注";
-			sourceTree = "<group>";
-		};
-		3EBF4B321D9AC77C00260EFF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3EBF4B331D9AC77C00260EFF /* MKEssenceViewController.h */,
-				3EBF4B341D9AC77C00260EFF /* MKEssenceViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3EBF4B351D9AC77C00260EFF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3EBF4B361D9AC77C00260EFF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3EBF4B371D9AC77C00260EFF /* Follow-关注 */ = {
@@ -355,7 +355,7 @@
 		3ED2240C1D917296005A3EAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3EBF4B311D9AC77C00260EFF /* Essence-关注 */,
+				3E908E721DA65338006A7CD7 /* Essence-精华 */,
 				3EBF4B431D9AC77C00260EFF /* New-新帖 */,
 				3EBF4B371D9AC77C00260EFF /* Follow-关注 */,
 				3EBF4B3D1D9AC77C00260EFF /* Me-我 */,
@@ -506,11 +506,11 @@
 				3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
 				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
-				3EBF4B541D9AC77C00260EFF /* MKEssenceViewController.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
+				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
 				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
 				3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */,
 			);
