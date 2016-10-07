@@ -8,6 +8,7 @@
 
 #import "MKFollowViewController.h"
 #import "MKRecomendFollowViewController.h"
+#import "MKLoginViewController.h"
 
 @interface MKFollowViewController ()
 
@@ -35,6 +36,13 @@
     [self.navigationController pushViewController:recomendVc animated:YES];
 }
 
+- (IBAction)loginRegister {
+    
+    MKLoginViewController *loginRegisterVc = [[MKLoginViewController alloc] init];
+    
+    [self presentViewController:loginRegisterVc animated:YES completion:NULL];
+    
+}
 
 
 @end
