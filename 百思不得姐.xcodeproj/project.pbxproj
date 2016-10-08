@@ -17,6 +17,7 @@
 		3E908E811DA6B18B006A7CD7 /* MKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E908E7F1DA6B18B006A7CD7 /* MKLoginViewController.xib */; };
 		3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */; };
 		3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */; };
+		3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */; };
 		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
 		3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */; };
@@ -68,6 +69,8 @@
 		3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKQuickLoginButton.m; sourceTree = "<group>"; };
 		3E908E881DA82570006A7CD7 /* UIImage+MKImageStrecth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MKImageStrecth.h"; sourceTree = "<group>"; };
 		3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKImageStrecth.m"; sourceTree = "<group>"; };
+		3E908E8B1DA8E818006A7CD7 /* MKLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLoginRegisterTextField.h; sourceTree = "<group>"; };
+		3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLoginRegisterTextField.m; sourceTree = "<group>"; };
 		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
 		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
 		3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFollowViewController.h; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				3EBF4B521D9AC77C00260EFF /* MKTabBar.m */,
 				3E908E821DA7C3D5006A7CD7 /* MKQuickLoginButton.h */,
 				3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */,
+				3E908E8B1DA8E818006A7CD7 /* MKLoginRegisterTextField.h */,
+				3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */,
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
