@@ -191,7 +191,6 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 
 - 使用实例
 	- 图文混排
-	
      ```objc
 		UILabel *label = [[UILabel alloc] init];
 		label.frame = CGRectMake(100, 100, 200, 25);
@@ -221,18 +220,18 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 	- 一个label显示多行不同文字
 	```objc
 	UILabel *label = [[UILabel alloc] init];
-// 设置属性文字
-NSString *text = @"你好\n哈哈哈";
-NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text];
-[attributedText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(0, text.length)];
-[attributedText addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:13] range:NSMakeRange(3, 3)];
-label.attributedText = attributedText;
-// 其他设置
-label.numberOfLines = 0;
-label.textAlignment = NSTextAlignmentCenter;
-label.frame = CGRectMake(0, 0, 100, 40);
-[self.view addSubview:label];
-self.navigationItem.titleView = label;
+	// 设置属性文字
+	NSString *text = @"你好\n哈哈哈";
+	NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text];
+	[attributedText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(0, text.length)];
+	[attributedText addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:13] range:NSMakeRange(3, 3)];
+	label.attributedText = attributedText;
+	// 其他设置
+	label.numberOfLines = 0;
+	label.textAlignment = NSTextAlignmentCenter;
+	label.frame = CGRectMake(0, 0, 100, 40);
+	[self.view addSubview:label];
+	self.navigationItem.titleView = label;
 	``` 
 	
 
