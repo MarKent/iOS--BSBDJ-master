@@ -137,7 +137,7 @@ textField.tintColor = [UIColor whiteColor];
 @property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder;
 ```
 
-### NSAttributedString
+## NSAttributedString
 - 带有属性的字符串,富文本
 - 由两部分组成
   * 文字内容:NSString *
@@ -156,21 +156,21 @@ textField.tintColor = [UIColor whiteColor];
 	```
 	```objc
 	//修改占位符文字颜色
-	    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+	self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 	```
 
 	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
-	  
 	  ```objc
-	   - (void)drawPlaceholderInRect:(CGRect)rect;
-	   - (void)drawPlaceholderInRect:(CGRect)rect;
+	   -(void)drawPlaceholderInRect:(CGRect)rect;
+	   -(void)drawPlaceholderInRect:(CGRect)rect;
 	 ```
 
-### NSMutableAttributedString
+## NSMutableAttributedString
 - 继承自NSAttributedString
 - 使用场合
-	- UILabel - attributedText
-	- UITextField - attributedPlaceholder
+	- UILabel:attributedText
+	- UITextField:attributedPlaceholder
+
 - 初始化
 ```objc
 NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
@@ -181,13 +181,13 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 ```
 
 - 常见方法
-```objc
-// 设置range范围的属性, 重复设置同一个范围的属性, 最后一次设置才是有效的(之前的设置会被覆盖掉)
- -(void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
-// 添加range范围的属性, 同一个范围, 可以不断累加属性
- -(void)addAttribute:(NSString *)name value:(id)value range:(NSRange)range;
- -(void)addAttributes:(NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
-```
+	```objc
+	// 设置range范围的属性, 重复设置同一个范围的属性, 最后一次设置才是有效的(之前的设置会被覆盖掉)
+	 -(void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
+	// 添加range范围的属性, 同一个范围, 可以不断累加属性
+	 -(void)addAttribute:(NSString *)name value:(id)value range:(NSRange)range;
+	 -(void)addAttributes:(NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
+	```
 
 - 使用实例
 	- 图文混排
