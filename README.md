@@ -136,32 +136,35 @@ textField.tintColor = [UIColor whiteColor];
 // 设置带有属性的占位文字, 优先级 > placeholder
 @property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder;
 ```
+
 ### NSAttributedString
 - 带有属性的字符串,富文本
 - 由两部分组成
   * 文字内容:NSString *
   * 文字属性:NSDictionary
     
-     文字颜色:NSForegroundColorAttributeName
-     字体大小:NSFontAttributeName
-     下划线:NSUnderlineStyleAttributeName
-     背景色:NSBackgroundColorAttributeName
-     ......
+     - 文字颜色:NSForegroundColorAttributeName
+     - 字体大小:NSFontAttributeName
+     - 下划线:NSUnderlineStyleAttributeName
+     - 背景色:NSBackgroundColorAttributeName
+     - ......
 
 - 修改UITextField占位文字的颜色
   - 使用attributedPlaceholder 
-```objc
-@property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder;
-```
-```objc
-//修改占位符文字颜色
-    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-```
+	```objc
+	@property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder;
+	```
+	```objc
+	//修改占位符文字颜色
+	    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+	```
 
-	- 重写- (void)drawPlaceholderInRect:(CGRect)rect;
-```objc
-- (void)drawPlaceholderInRect:(CGRect)rect;
-```
+	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
+	  
+	  ```objc
+	 	- (void)drawPlaceholderInRect:(CGRect)rect;
+	   - (void)drawPlaceholderInRect:(CGRect)rect;
+	 ```
 
 ### NSMutableAttributedString
 - 继承自NSAttributedString
@@ -179,6 +182,7 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 ```
 
 - 常见方法
+
 ```objc
 // 设置range范围的属性, 重复设置同一个范围的属性, 最后一次设置才是有效的(之前的设置会被覆盖掉)
 - (void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
