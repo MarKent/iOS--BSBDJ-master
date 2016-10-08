@@ -162,7 +162,7 @@ textField.tintColor = [UIColor whiteColor];
 	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
 	  
 	  ```objc
-	 	- (void)drawPlaceholderInRect:(CGRect)rect;
+	   - (void)drawPlaceholderInRect:(CGRect)rect;
 	   - (void)drawPlaceholderInRect:(CGRect)rect;
 	 ```
 
@@ -171,7 +171,6 @@ textField.tintColor = [UIColor whiteColor];
 - 使用场合
 	- UILabel - attributedText
 	- UITextField - attributedPlaceholder
-	
 - 初始化
 ```objc
 NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
