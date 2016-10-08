@@ -160,17 +160,18 @@ textField.tintColor = [UIColor whiteColor];
 	```
 
 	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
+	  
 	  ```objc
 	   -(void)drawPlaceholderInRect:(CGRect)rect;
-	   -(void)drawPlaceholderInRect:(CGRect)rect;
-	 ```
+	      -(void)drawPlaceholderInRect:(CGRect)rect;
+	  ```
 
 ## NSMutableAttributedString
 - 继承自NSAttributedString
 - 使用场合
 	- UILabel:attributedText
 	- UITextField:attributedPlaceholder
-
+	
 - 初始化
 ```objc
 NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
@@ -191,32 +192,32 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 
 - 使用实例
 	- 图文混排
-     ```objc
-		UILabel *label = [[UILabel alloc] init];
-		label.frame = CGRectMake(100, 100, 200, 25);
-		label.backgroundColor = [UIColor redColor];
-		label.font = [UIFont systemFontOfSize:14];
-		[self.view addSubview:label];
-		// 图文混排
-		NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] init];
-		// 1 - 你好
-		NSAttributedString *first = [[NSAttributedString alloc] initWithString:@"你好"];
-		[attributedText appendAttributedString:first];
-		// 2 - 图片
-		// 带有图片的附件对象
-		NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
-		attachment.image = [UIImage imageNamed:@"header_cry_icon"];
-		CGFloat lineH = label.font.lineHeight;
-		attachment.bounds = CGRectMake(0, - ((label.xmg_height - lineH) * 0.5 - 1), lineH, lineH);
-		// 将附件对象包装成一个属性文字
-		NSAttributedString *second = [NSAttributedString attributedStringWithAttachment:attachment];
-		[attributedText appendAttributedString:second];
-		// 3 - 哈哈哈
-		NSAttributedString *third = [[NSAttributedString alloc] initWithString:@"哈哈哈"];
-		[attributedText appendAttributedString:third];
-		label.attributedText = attributedText;
-	  ```
-	  
+	```objc
+	UILabel *label = [[UILabel alloc] init];
+	label.frame = CGRectMake(100, 100, 200, 25);
+	label.backgroundColor = [UIColor redColor];
+	label.font = [UIFont systemFontOfSize:14];
+	[self.view addSubview:label];
+	//图文混排
+	NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] init];
+	//1-你好
+	NSAttributedString *first = [[NSAttributedString alloc] initWithString:@"你好"];
+	[attributedText appendAttributedString:first];
+	//2-图片
+	//带有图片的附件对象
+	NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+	attachment.image = [UIImage imageNamed:@"header_cry_icon"];
+	CGFloat lineH = label.font.lineHeight;
+	attachment.bounds = CGRectMake(0, - ((label.xmg_height - lineH) * 0.5 - 1), lineH, lineH);
+	//将附件对象包装成一个属性文字
+	NSAttributedString *second = [NSAttributedString attributedStringWithAttachment:attachment];
+	[attributedText appendAttributedString:second];
+	//3-哈哈哈
+	NSAttributedString *third = [[NSAttributedString alloc] initWithString:@"哈哈哈"];
+	[attributedText appendAttributedString:third];
+	label.attributedText = attributedText;
+	```
+
 	- 一个label显示多行不同文字
 	```objc
 	UILabel *label = [[UILabel alloc] init];
