@@ -182,13 +182,12 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 ```
 
 - 常见方法
-
 ```objc
 // 设置range范围的属性, 重复设置同一个范围的属性, 最后一次设置才是有效的(之前的设置会被覆盖掉)
-- (void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
+ -(void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
 // 添加range范围的属性, 同一个范围, 可以不断累加属性
-- (void)addAttribute:(NSString *)name value:(id)value range:(NSRange)range;
-- (void)addAttributes:(NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
+ -(void)addAttribute:(NSString *)name value:(id)value range:(NSRange)range;
+ -(void)addAttributes:(NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
 ```
 
 - 使用实例
