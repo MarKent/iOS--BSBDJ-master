@@ -167,13 +167,10 @@ textField.tintColor = [UIColor whiteColor];
 	 ```
 
 ### NSMutableAttributedString
-
 - 继承自NSAttributedString
-
 - 使用场合
 	- UILabel - attributedText
 	- UITextField - attributedPlaceholder
-	
 - 初始化
 ```objc
 NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
