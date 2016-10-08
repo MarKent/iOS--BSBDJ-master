@@ -162,12 +162,14 @@ textField.tintColor = [UIColor whiteColor];
 	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
 	  
 	  ```objc
-	 	- (void)drawPlaceholderInRect:(CGRect)rect;
+	   - (void)drawPlaceholderInRect:(CGRect)rect;
 	   - (void)drawPlaceholderInRect:(CGRect)rect;
 	 ```
 
 ### NSMutableAttributedString
+
 - 继承自NSAttributedString
+
 - 使用场合
 	- UILabel - attributedText
 	- UITextField - attributedPlaceholder
@@ -182,7 +184,6 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 ```
 
 - 常见方法
-
 ```objc
 // 设置range范围的属性, 重复设置同一个范围的属性, 最后一次设置才是有效的(之前的设置会被覆盖掉)
 - (void)setAttributes:(nullable NSDictionary<NSString *, id> *)attrs range:(NSRange)range;
