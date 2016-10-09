@@ -26,12 +26,12 @@
     
     //设置左侧按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
+    
 }
 
 #pragma mark - 按钮点击事件
 - (void)followClick {
     
-    MKLogFunc
     MKRecomendFollowViewController *recomendVc = [[MKRecomendFollowViewController alloc] init];
     [self.navigationController pushViewController:recomendVc animated:YES];
 }

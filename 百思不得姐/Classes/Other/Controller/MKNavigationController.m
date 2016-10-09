@@ -32,7 +32,7 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
 
-    MKLog(@"%@",viewController);
+    //MKLog(@"%@",viewController);
     if (self.childViewControllers.count >0) {
         
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

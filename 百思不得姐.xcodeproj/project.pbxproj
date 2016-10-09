@@ -11,6 +11,7 @@
 		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
 		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
+		3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */; };
 		3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */; };
 		3E908E7C1DA6544F006A7CD7 /* MKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */; };
 		3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E7E1DA6B18B006A7CD7 /* MKLoginViewController.m */; };
@@ -59,6 +60,8 @@
 		3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNavigationController.m; sourceTree = "<group>"; };
 		3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSettingViewController.h; sourceTree = "<group>"; };
 		3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSettingViewController.m; sourceTree = "<group>"; };
+		3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MKPlaceholderTextColor.h"; sourceTree = "<group>"; };
+		3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MKPlaceholderTextColor.m"; sourceTree = "<group>"; };
 		3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
 		3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
 		3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKFollowViewController.xib; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */,
 				3E908E881DA82570006A7CD7 /* UIImage+MKImageStrecth.h */,
 				3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */,
+				3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */,
+				3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
+				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,

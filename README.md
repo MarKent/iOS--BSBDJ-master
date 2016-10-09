@@ -160,12 +160,16 @@ textField.tintColor = [UIColor whiteColor];
 	```
 
 	- 重写-(void)drawPlaceholderInRect:(CGRect)rect;
-	  
 	  ```objc
-	   -(void)drawPlaceholderInRect:(CGRect)rect;
-	      -(void)drawPlaceholderInRect:(CGRect)rect;
+	  -(void)drawPlaceholderInRect:(CGRect)rect;
+	  -(void)drawPlaceholderInPoint:(CGPoint)point;
 	  ```
-
+	  
+  - KVC取私有成员变量(通过runtime验证)
+  ```objc
+  [textField setValue:[UIColor whiteColor] forKeyPath:@"placeHolderLabel.textColor"];
+  ```
+  
 ## NSMutableAttributedString
 - 继承自NSAttributedString
 - 使用场合
@@ -235,5 +239,34 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 	self.navigationItem.titleView = label;
 	``` 
 	
-
+## TextField的事件监听
+- 四种方法
+  - 监听textField编辑事件
+    - 4种方法:
+      - addTarget  继承自UIControl
+      - 代理 self.delegate = self; 这种方法存在被外部覆盖的风险
+      - 通知 给自己添加监听者并自己发出通知,最后要移除.如果通知添加在子线程,处理也在子线程,但界面的修改都在主线程
+      - 4:重写becomeFirstResponder和registerFirstResponder方法
+- 例如:
+```objc
+	//利用一次性通知方法通知中的block监听
+	id observer1 = [[NSNotificationCenter defaultCenter]
+	               addObserverForName:UITextFieldTextDidBeginEditingNotification
+	               object:self queue:[NSOperationQueue mainQueue]
+	               usingBlock:^(NSNotification * _Nonnull note) {
+	   
+	   [self setValue:[UIColor whiteColor] forKeyPath:MKPlaceholderTextColor];
+	   [[NSNotificationCenter defaultCenter] removeObserver:observer1];
+	     
+	}];
+	    
+	id observer2 = [[NSNotificationCenter defaultCenter]
+	               addObserverForName:UITextFieldTextDidEndEditingNotification
+	               object:self queue:[NSOperationQueue mainQueue]
+	               usingBlock:^(NSNotification * _Nonnull note) {
+	   
+	   [self setValue:[UIColor grayColor] forKeyPath:MKPlaceholderTextColor];
+	    [[NSNotificationCenter defaultCenter] removeObserver:observer2];
+	}];
+```
 
