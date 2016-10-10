@@ -14,6 +14,8 @@
 		3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */; };
 		3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */; };
 		3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */; };
+		3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C421DABF9170087B797 /* MKMeFooterView.m */; };
+		3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C451DABFE3C0087B797 /* MKMeSpuare.m */; };
 		3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */; };
 		3E908E7C1DA6544F006A7CD7 /* MKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */; };
 		3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E7E1DA6B18B006A7CD7 /* MKLoginViewController.m */; };
@@ -69,6 +71,10 @@
 		3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCommonConst.m; sourceTree = "<group>"; };
 		3E907C3E1DAB6C2A0087B797 /* MKMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeCell.h; sourceTree = "<group>"; };
 		3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeCell.m; sourceTree = "<group>"; };
+		3E907C411DABF9170087B797 /* MKMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeFooterView.h; sourceTree = "<group>"; };
+		3E907C421DABF9170087B797 /* MKMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeFooterView.m; sourceTree = "<group>"; };
+		3E907C441DABFE3C0087B797 /* MKMeSpuare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeSpuare.h; sourceTree = "<group>"; };
+		3E907C451DABFE3C0087B797 /* MKMeSpuare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeSpuare.m; sourceTree = "<group>"; };
 		3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
 		3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
 		3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKFollowViewController.xib; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 		3EBF4B411D9AC77C00260EFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E907C441DABFE3C0087B797 /* MKMeSpuare.h */,
+				3E907C451DABFE3C0087B797 /* MKMeSpuare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +271,8 @@
 			children = (
 				3E907C3E1DAB6C2A0087B797 /* MKMeCell.h */,
 				3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */,
+				3E907C411DABF9170087B797 /* MKMeFooterView.h */,
+				3E907C421DABF9170087B797 /* MKMeFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -635,11 +645,13 @@
 				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
 				3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
+				3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */,
 				3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */,
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
 				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
+				3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */,
 				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,

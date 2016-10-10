@@ -9,6 +9,7 @@
 #import "MKMeViewController.h"
 #import "MKSettingViewController.h"
 #import "MKMeCell.h"
+#import "MKMeFooterView.h"
 
 @interface MKMeViewController ()
 
@@ -45,10 +46,8 @@
     self.tableView.contentInset = UIEdgeInsetsMake(MKMargin-35, 0, 0, 0);
     
     //表尾视图
-    UIView *footerView = [[UIView alloc] init];
-    footerView.backgroundColor = [UIColor purpleColor];
-    footerView.mk_height = 200;
-    self.tableView.tableFooterView = footerView;
+    self.tableView.tableFooterView = [[MKMeFooterView alloc] init];
+    
 }
 #pragma mark - <UITableViewDelegate>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
