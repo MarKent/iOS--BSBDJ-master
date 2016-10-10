@@ -12,6 +12,8 @@
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
 		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
 		3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */; };
+		3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */; };
+		3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */; };
 		3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */; };
 		3E908E7C1DA6544F006A7CD7 /* MKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */; };
 		3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E7E1DA6B18B006A7CD7 /* MKLoginViewController.m */; };
@@ -31,6 +33,7 @@
 		3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E51D916F66005A3EAC /* Assets.xcassets */; };
 		3ED223F41D916F66005A3EAC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223F31D916F66005A3EAC /* _____Tests.m */; };
 		3ED223FF1D916F66005A3EAC /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223FE1D916F66005A3EAC /* _____UITests.m */; };
+		D364CB1C2506B068FA4A3B40 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 		3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSettingViewController.m; sourceTree = "<group>"; };
 		3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MKPlaceholderTextColor.h"; sourceTree = "<group>"; };
 		3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MKPlaceholderTextColor.m"; sourceTree = "<group>"; };
+		3E907C3B1DAB68EB0087B797 /* MKCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCommonConst.h; sourceTree = "<group>"; };
+		3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCommonConst.m; sourceTree = "<group>"; };
+		3E907C3E1DAB6C2A0087B797 /* MKMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeCell.h; sourceTree = "<group>"; };
+		3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeCell.m; sourceTree = "<group>"; };
 		3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceViewController.h; sourceTree = "<group>"; };
 		3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceViewController.m; sourceTree = "<group>"; };
 		3E908E7B1DA6544F006A7CD7 /* MKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKFollowViewController.xib; sourceTree = "<group>"; };
@@ -99,6 +106,9 @@
 		3ED223FA1D916F66005A3EAC /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223FE1D916F66005A3EAC /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		3ED224001D916F66005A3EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		6DF073C2D989F2E4BAF160BB /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D364CB1C2506B068FA4A3B40 /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E907C3A1DAB68C50087B797 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				3E907C3B1DAB68EB0087B797 /* MKCommonConst.h */,
+				3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		3E908E721DA65338006A7CD7 /* Essence-精华 */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +261,8 @@
 		3EBF4B421D9AC77C00260EFF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E907C3E1DAB6C2A0087B797 /* MKMeCell.h */,
+				3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +353,8 @@
 				3ED223F21D916F66005A3EAC /* 百思不得姐Tests */,
 				3ED223FD1D916F66005A3EAC /* 百思不得姐UITests */,
 				3ED223D71D916F66005A3EAC /* Products */,
+				476EE31E4F9B546C2D39816A /* Pods */,
+				A7F1A6A0378E9E40A87DFAF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -391,9 +415,27 @@
 				3EBF4B371D9AC77C00260EFF /* Follow-关注 */,
 				3EBF4B3D1D9AC77C00260EFF /* Me-我 */,
 				3EBF4B2E1D9AC77C00260EFF /* Category */,
+				3E907C3A1DAB68C50087B797 /* Macros */,
 				3EBF4B491D9AC77C00260EFF /* Other */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		476EE31E4F9B546C2D39816A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DF073C2D989F2E4BAF160BB /* Pods-百思不得姐.debug.xcconfig */,
+				4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7F1A6A0378E9E40A87DFAF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,9 +445,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ED224031D916F66005A3EAC /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				8CE1B3F9E02BE547F7055028 /* [CP] Check Pods Manifest.lock */,
 				3ED223D21D916F66005A3EAC /* Sources */,
 				3ED223D31D916F66005A3EAC /* Frameworks */,
 				3ED223D41D916F66005A3EAC /* Resources */,
+				868E2A256D6167AE97B5B112 /* [CP] Embed Pods Frameworks */,
+				4C9A1BF722EBCE98C8F1D594 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -528,12 +573,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C9A1BF722EBCE98C8F1D594 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868E2A256D6167AE97B5B112 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE1B3F9E02BE547F7055028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3ED223D21D916F66005A3EAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */,
+				3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */,
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
@@ -543,6 +637,7 @@
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
 				3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */,
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
+				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
@@ -615,6 +710,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -637,7 +733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -662,6 +758,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -678,7 +775,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -687,6 +784,7 @@
 		};
 		3ED224041D916F66005A3EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF073C2D989F2E4BAF160BB /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -705,6 +803,7 @@
 		};
 		3ED224051D916F66005A3EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

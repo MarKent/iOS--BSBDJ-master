@@ -54,6 +54,11 @@
  */
 - (void)addChildsViewControllers {
 
+    [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKMeViewController alloc]init]]
+                             title:@"我"
+                         imageName:@"tabBar_me_icon"
+                 selectedImageName:@"tabBar_me_click_icon"];
+    
     [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKFollowViewController alloc]init]]
                              title:@"关注"
                          imageName:@"tabBar_friendTrends_icon"
@@ -69,11 +74,6 @@
                          imageName:@"tabBar_new_icon"
                  selectedImageName:@"tabBar_new_click_icon"];
     
-    
-    [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKMeViewController alloc]init]]
-                             title:@"我"
-                         imageName:@"tabBar_me_icon"
-                 selectedImageName:@"tabBar_me_click_icon"];
 }
 /**
  初始化一个子控制器
