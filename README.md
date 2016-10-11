@@ -270,3 +270,15 @@ NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"123" a
 	}];
 ```
 
+## 通过自定义方式设置tableView的footerView后,tableView的contentSize出现问题的Bug
+- 解决方案:在获得最终footerView的高度后,重新赋给tableView的footerView,并刷新数据
+```objc
+//设置表尾视图最终高度
+self.mk_height = CGRectGetMaxY(self.subviews.lastObject.frame);
+//重新设置tableView的FooterView,否则视图加载完成后尾视图高度为0
+UITableView *tableView = (UITableView *)self.superview;
+tableView.tableFooterView = self;
+//刷新数据,重新计算tableView的contentSize
+[tableView reloadData];
+```
+
