@@ -89,7 +89,7 @@
 #pragma mark - 按钮点击
 - (void)settingClick {
 
-    MKLogFunc
+    //MKLogFunc
     MKSettingViewController *settingVc = [[MKSettingViewController alloc] init];
     
     [self.navigationController pushViewController:settingVc animated:YES];

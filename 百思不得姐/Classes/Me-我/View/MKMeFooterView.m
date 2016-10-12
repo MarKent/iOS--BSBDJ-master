@@ -11,6 +11,7 @@
 #import "MKMeSpuare.h"
 #import <MJExtension.h>
 #import "MKMeSquareButton.h"
+#import "MKWebViewController.h"
 
 @implementation MKMeFooterView
 
@@ -26,7 +27,22 @@
         [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
             
             //字典数组-->模型数组
-            NSArray *squaresArr = [MKMeSpuare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
+            NSMutableArray *squaresArr = [MKMeSpuare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
+            
+            //去除相同的数据
+            for (int i = 0; i < squaresArr.count; i++) {
+                //取每一个
+                MKMeSpuare *firstSquare = squaresArr[i];
+                for (int j = i+1; j<squaresArr.count; j++) {
+                    //剩下的每一个
+                    MKMeSpuare *secondSquare = squaresArr[j];
+                    //比较,相同名字则移除位置靠后的相同的那一个
+                    if ([secondSquare.name isEqualToString: firstSquare.name ]) {
+                        
+                        [squaresArr removeObject:secondSquare];
+                    }
+                }
+            }
             //创建按钮
             [self creatButton:squaresArr];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -43,7 +59,7 @@
     NSUInteger count = squaresArr.count;
     
     //最大列数确定的
-    int maxColumsCount = 4;
+    NSUInteger maxColumsCount = 4;
     CGFloat btnWidth = self.mk_width / 4;
     CGFloat btnHeight = btnWidth;
     
@@ -64,8 +80,15 @@
         //添加到footerView
         [self addSubview:button];
     }
+    
+    /*类似排列问题的万能公式 此例(已知列数即每行元素个数):(行数=总数+列数-1)/列数
+     等价于: if(总数%每行个数 == 0){行数=总数/每行个数}else{行数=(总数/每行个数)+1}
+     */
+    NSUInteger rows = (squaresArr.count + maxColumsCount -1)/maxColumsCount;
     //设置footerView最终高度
-    self.mk_height = CGRectGetMaxY(self.subviews.lastObject.frame);
+    self.mk_height = rows * btnHeight;
+    //self.mk_height = CGRectGetMaxY(self.subviews.lastObject.frame);
+    
     //重新设置tableView的FooterView,否则视图加载完成后footerView高度为0
     UITableView *tableView = (UITableView *)self.superview;
     tableView.tableFooterView = self;
@@ -80,7 +103,15 @@
     //(用于字符串)prefix前缀<-->suffix后缀
     if ([square.url hasPrefix:@"http"] || [square.url hasPrefix:@"https"]) {
         
-        NSLog(@"加载网页");
+        MKWebViewController *webViewVc = [[MKWebViewController alloc] init];
+        webViewVc.navigationItem.title = square.name;
+        webViewVc.url = square.url;
+        
+        //取得当前导航控制器
+        UITabBarController *tbController = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *currentNv = tbController.selectedViewController;
+        [currentNv pushViewController:webViewVc animated:YES];
+        
         
     }else {
     

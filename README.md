@@ -282,3 +282,30 @@ tableView.tableFooterView = self;
 [tableView reloadData];
 ```
 
+## 计算缓存文件大小
+```objc
+//获取存放缓存的路径
+    NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+    NSString *mainPath = [cachePath stringByAppendingPathComponent:@"default/com.hackemist.SDWebImageCache.default"];
+    MKLog(@"%@",mainPath);
+    //文件管理者
+    NSFileManager *manager = [NSFileManager defaultManager];
+    //方法一:获取mainPath路径下所有子内容路径
+    /*[manager contentsOfDirectoryAtPath:mainPath error:nil];只获取一层*/
+    //NSArray *subpaths = [manager subpathsAtPath:mainPath];//获取所有层
+    //MKLog(@"%@",subPaths);
+    //方法二:利用文件迭代器
+    NSDirectoryEnumerator *enumerater = [manager enumeratorAtPath:mainPath];
+    unsigned long long size = 0;
+    //遍历计算每一个文件大小,最后相加
+    for (NSString *subpath in enumerater) {
+        //获取每一个文件路径
+        NSString *filePath = [mainPath stringByAppendingPathComponent:subpath];
+        //根据路径获得文件属性字典,再取文件大小
+        NSDictionary *fileAttru = [manager attributesOfItemAtPath:filePath error:nil];
+        size += [fileAttru[NSFileSize] unsignedIntValue];
+        //size += fileAttru.fileSize;
+    }
+    MKLog(@"%zd",size);
+```
+

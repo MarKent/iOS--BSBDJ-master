@@ -36,6 +36,9 @@
 		3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E51D916F66005A3EAC /* Assets.xcassets */; };
 		3ED223F41D916F66005A3EAC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223F31D916F66005A3EAC /* _____Tests.m */; };
 		3ED223FF1D916F66005A3EAC /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223FE1D916F66005A3EAC /* _____UITests.m */; };
+		3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */; };
+		3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */; };
+		3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */; };
 		D364CB1C2506B068FA4A3B40 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +118,11 @@
 		3ED223FA1D916F66005A3EAC /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223FE1D916F66005A3EAC /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		3ED224001D916F66005A3EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF6799C1DAD611A00D37AD4 /* MKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWebViewController.h; sourceTree = "<group>"; };
+		3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWebViewController.m; sourceTree = "<group>"; };
+		3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKWebViewController.xib; sourceTree = "<group>"; };
+		3EF679A11DAE395700D37AD4 /* NSString+MKFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKFileSize.h"; sourceTree = "<group>"; };
+		3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFileSize.m"; sourceTree = "<group>"; };
 		4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		6DF073C2D989F2E4BAF160BB /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +207,8 @@
 				3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */,
 				3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */,
 				3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */,
+				3EF679A11DAE395700D37AD4 /* NSString+MKFileSize.h */,
+				3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -256,6 +266,9 @@
 				3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */,
 				3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */,
 				3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */,
+				3EF6799C1DAD611A00D37AD4 /* MKWebViewController.h */,
+				3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */,
+				3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -568,6 +581,7 @@
 				3E908E7C1DA6544F006A7CD7 /* MKFollowViewController.xib in Resources */,
 				3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */,
 				3E908E811DA6B18B006A7CD7 /* MKLoginViewController.xib in Resources */,
+				3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */,
 				3ED223E41D916F66005A3EAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +660,7 @@
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
 				3E907C4C1DAC300D0087B797 /* MKMeSquareButton.m in Sources */,
+				3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
 				3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
 				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
@@ -661,6 +676,7 @@
 				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
+				3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
 				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
 				3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */,
