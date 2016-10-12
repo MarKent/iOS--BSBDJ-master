@@ -39,6 +39,7 @@
 		3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */; };
 		3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */; };
 		3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */; };
+		3EF679A61DAE99AA00D37AD4 /* MKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A51DAE99AA00D37AD4 /* MKClearCacheCell.m */; };
 		D364CB1C2506B068FA4A3B40 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,8 @@
 		3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKWebViewController.xib; sourceTree = "<group>"; };
 		3EF679A11DAE395700D37AD4 /* NSString+MKFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKFileSize.h"; sourceTree = "<group>"; };
 		3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFileSize.m"; sourceTree = "<group>"; };
+		3EF679A41DAE99AA00D37AD4 /* MKClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKClearCacheCell.h; sourceTree = "<group>"; };
+		3EF679A51DAE99AA00D37AD4 /* MKClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKClearCacheCell.m; sourceTree = "<group>"; };
 		4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		6DF073C2D989F2E4BAF160BB /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +294,8 @@
 				3E907C421DABF9170087B797 /* MKMeFooterView.m */,
 				3E907C4A1DAC300D0087B797 /* MKMeSquareButton.h */,
 				3E907C4B1DAC300D0087B797 /* MKMeSquareButton.m */,
+				3EF679A41DAE99AA00D37AD4 /* MKClearCacheCell.h */,
+				3EF679A51DAE99AA00D37AD4 /* MKClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
 				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
+				3EF679A61DAE99AA00D37AD4 /* MKClearCacheCell.m in Sources */,
 				3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,9 @@
 //
 
 #import "MKSettingViewController.h"
+#import "MKClearCacheCell.h"
 
+static NSString *cell_id = @"MKClearCacheCell";
 @interface MKSettingViewController ()
 
 @end
@@ -25,6 +27,8 @@
     self.navigationItem.title = @"设置";
     self.tableView.backgroundColor = MKCommonBgColor;
     
+    //注册单元格
+    [self.tableView registerClass:[MKClearCacheCell class] forCellReuseIdentifier:cell_id];
 }
 #pragma mark -- <数据源代理>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,34 +41,13 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //1.确定重用标识
-    static NSString *ID = @"cell_id";
-    //2.从缓存池中去cell
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    //3.没有则创建
-    if (!cell) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"清理缓存%zdMB",([self getCaCheSize]/1000)/1000];
+    //从缓存池中去cell
+    MKClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_id];
     
     return cell;
 }
 
-#pragma mark -- 缓存大小
-- (unsigned long long)getCaCheSize {
-    
-    unsigned long long size = 0;
-    
-    //获取存放缓存的路径
-    NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *mainPath = [cachePath stringByAppendingPathComponent:@"default/com.hackemist.SDWebImageCache.default"];
-    //MKLog(@"%@",mainPath);
-    size = mainPath.mk_getFileSize;
-    MKLog(@"%zd",size);
-    return size;
-}
+
 @end
 
 

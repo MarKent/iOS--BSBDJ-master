@@ -43,8 +43,12 @@
                     }
                 }
             }
-            //创建按钮
-            [self creatButton:squaresArr];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                //创建按钮
+                [self creatButton:squaresArr];
+            });
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
             NSLog(@"请求失败%@",error);
@@ -81,7 +85,8 @@
         [self addSubview:button];
     }
     
-    /*类似排列问题的万能公式 此例(已知列数即每行元素个数):(行数=总数+列数-1)/列数
+    /*
+     类似排列问题的万能公式 此例(已知列数即每行元素个数):(行数=总数+列数-1)/列数
      等价于: if(总数%每行个数 == 0){行数=总数/每行个数}else{行数=(总数/每行个数)+1}
      */
     NSUInteger rows = (squaresArr.count + maxColumsCount -1)/maxColumsCount;
