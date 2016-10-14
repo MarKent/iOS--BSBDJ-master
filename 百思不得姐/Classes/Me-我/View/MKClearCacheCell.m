@@ -11,6 +11,7 @@
 #import <SVProgressHUD.h>
 
 #define MKBSBDJCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"Custom"]
+
 @implementation MKClearCacheCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -27,15 +28,18 @@
         //禁止点击 如果文字之前设置禁止点击,文字会变成灰色
         self.userInteractionEnabled = NO;
         
-        //防止循环引用
+        //如果cell被销毁了,下面主线程中代码不再执行
         __weak typeof(self) weakSelf = self;
         //在子线程中计算
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-#warning deng
-            [NSThread sleepForTimeInterval:2.0];
+
             //获得计算的缓存并转换数据格式
             unsigned long long size = MKBSBDJCachePath.mk_getFileSize;
             size += [SDImageCache sharedImageCache].getSize;
+            
+            //如果cell销毁,不执行后面代码(不加这句也可以)
+            if (weakSelf == nil) return;
+            
             NSString *sizeStr = [weakSelf setupFormat:size];
             //在主线程中更新UI
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -79,9 +83,9 @@
 
     //清除SDWebImage缓存
     [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
-        
+
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            
+
             //子线程中清除本项目的缓存内容
             [MKBSBDJCachePath mk_clearCacheAtDirectory];
             
@@ -96,10 +100,16 @@
     }];
 }
 
+
+/**
+ 如果正在计算缓存时,使得清除缓存cell进入重用池,那么再次加载时动画会被取消
+ 所以当cell重新被加载时,继续正在计算缓存的动画,需要再次开启动画
+ */
 - (void)layoutSubviews {
 
     [super layoutSubviews];
     
+    //继续动画
     UIActivityIndicatorView *loadingView = (UIActivityIndicatorView *)self.accessoryView;
     [loadingView startAnimating];
 }

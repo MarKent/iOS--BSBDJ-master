@@ -53,7 +53,12 @@
  添加子控制器
  */
 - (void)addChildsViewControllers {
-
+   
+    [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKEssenceViewController alloc]init]]
+                             title:@"精华"
+                         imageName:@"tabBar_essence_icon"
+                 selectedImageName:@"tabBar_essence_click_icon"];
+    
     [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKMeViewController alloc]init]]
                              title:@"我"
                          imageName:@"tabBar_me_icon"
@@ -63,11 +68,6 @@
                              title:@"关注"
                          imageName:@"tabBar_friendTrends_icon"
                  selectedImageName:@"tabBar_friendTrends_click_icon"];
-    
-    [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKEssenceViewController alloc]init]]
-                             title:@"精华"
-                         imageName:@"tabBar_essence_icon"
-                 selectedImageName:@"tabBar_essence_click_icon"];
     
     [self setupChildViewController:[[MKNavigationController alloc] initWithRootViewController:[[MKNewViewController alloc]init]]
                              title:@"新帖"

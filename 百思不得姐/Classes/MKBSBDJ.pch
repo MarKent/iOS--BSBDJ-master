@@ -25,7 +25,6 @@
 //如果模拟器测试(开发版Debug)用MKLog(...)代替NSLog()打印
 //如果真机调试(发布版Release)用此宏不打印日志,提高性能,但是用NSLog()还会继续打印
 #ifdef DEBUG
-
 #define MKLog(...) NSLog(__VA_ARGS__)//__VA_ARGS__固定写法表示很多参数
 #else
 #define MKLog(...)

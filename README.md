@@ -309,3 +309,5 @@ tableView.tableFooterView = self;
     MKLog(@"%zd",size);
 ```
 
+## 通过注册不同标识符的cell,来创建不同样式的单元格
+

@@ -36,6 +36,7 @@
 		3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E51D916F66005A3EAC /* Assets.xcassets */; };
 		3ED223F41D916F66005A3EAC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223F31D916F66005A3EAC /* _____Tests.m */; };
 		3ED223FF1D916F66005A3EAC /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223FE1D916F66005A3EAC /* _____UITests.m */; };
+		3ED6755F1DB14FA3000D87E4 /* MKEssenceTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6755E1DB14FA3000D87E4 /* MKEssenceTitleButton.m */; };
 		3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */; };
 		3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */; };
 		3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */; };
@@ -119,6 +120,8 @@
 		3ED223FA1D916F66005A3EAC /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223FE1D916F66005A3EAC /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		3ED224001D916F66005A3EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED6755D1DB14FA3000D87E4 /* MKEssenceTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEssenceTitleButton.h; sourceTree = "<group>"; };
+		3ED6755E1DB14FA3000D87E4 /* MKEssenceTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEssenceTitleButton.m; sourceTree = "<group>"; };
 		3EF6799C1DAD611A00D37AD4 /* MKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWebViewController.h; sourceTree = "<group>"; };
 		3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWebViewController.m; sourceTree = "<group>"; };
 		3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKWebViewController.xib; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 		3E908E771DA65338006A7CD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3ED6755D1DB14FA3000D87E4 /* MKEssenceTitleButton.h */,
+				3ED6755E1DB14FA3000D87E4 /* MKEssenceTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -677,6 +682,7 @@
 				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
+				3ED6755F1DB14FA3000D87E4 /* MKEssenceTitleButton.m in Sources */,
 				3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */,
 				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
