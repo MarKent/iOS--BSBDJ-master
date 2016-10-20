@@ -311,3 +311,19 @@ tableView.tableFooterView = self;
 
 ## 通过注册不同标识符的cell,来创建不同样式的单元格
 
+## 计算文字内容尺寸
+```objc
+//方法一:无法计算有换行的文字宽度
+        //self.indicaterView.mk_width = [button.currentTitle sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}].width;
+        //可以计算换行
+        //[button.currentTitle boundingRectWithSize: options: attributes: context:];
+```
+## 当取某一视图的子视图时,不建议用tag值,因为当某tag值不存在时还会加载自身的tag值
+## 判断某一视图是否加载的方法
+```objc
+if (view.superView){}
+if (view.window){}
+if ([view.window.rootViewController isViewLoaded]){}
+```
+## bounds.origin.x/y = contentOffset.x/y
+

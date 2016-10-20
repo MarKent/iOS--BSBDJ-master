@@ -24,6 +24,12 @@
 		3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */; };
 		3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */; };
 		3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */; };
+		3EB5AAF61DB8E03900FC2177 /* MKAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAF51DB8E03900FC2177 /* MKAllViewController.m */; };
+		3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAF81DB8E05300FC2177 /* MKVideoViewController.m */; };
+		3EB5AAFC1DB8E07200FC2177 /* MKSoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAFB1DB8E07200FC2177 /* MKSoundsViewController.m */; };
+		3EB5AAFF1DB8E08000FC2177 /* MKPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAFE1DB8E08000FC2177 /* MKPictureViewController.m */; };
+		3EB5AB021DB8E09900FC2177 /* MKJokerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */; };
+		3EB5AB051DB93D2600FC2177 /* MKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AB041DB93D2600FC2177 /* MKTableViewController.m */; };
 		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
 		3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */; };
@@ -95,6 +101,18 @@
 		3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKImageStrecth.m"; sourceTree = "<group>"; };
 		3E908E8B1DA8E818006A7CD7 /* MKLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLoginRegisterTextField.h; sourceTree = "<group>"; };
 		3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLoginRegisterTextField.m; sourceTree = "<group>"; };
+		3EB5AAF41DB8E03900FC2177 /* MKAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAllViewController.h; sourceTree = "<group>"; };
+		3EB5AAF51DB8E03900FC2177 /* MKAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAllViewController.m; sourceTree = "<group>"; };
+		3EB5AAF71DB8E05300FC2177 /* MKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKVideoViewController.h; sourceTree = "<group>"; };
+		3EB5AAF81DB8E05300FC2177 /* MKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKVideoViewController.m; sourceTree = "<group>"; };
+		3EB5AAFA1DB8E07200FC2177 /* MKSoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSoundsViewController.h; sourceTree = "<group>"; };
+		3EB5AAFB1DB8E07200FC2177 /* MKSoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSoundsViewController.m; sourceTree = "<group>"; };
+		3EB5AAFD1DB8E08000FC2177 /* MKPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPictureViewController.h; sourceTree = "<group>"; };
+		3EB5AAFE1DB8E08000FC2177 /* MKPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPictureViewController.m; sourceTree = "<group>"; };
+		3EB5AB001DB8E09900FC2177 /* MKJokerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJokerViewController.h; sourceTree = "<group>"; };
+		3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJokerViewController.m; sourceTree = "<group>"; };
+		3EB5AB031DB93D2600FC2177 /* MKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTableViewController.h; sourceTree = "<group>"; };
+		3EB5AB041DB93D2600FC2177 /* MKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTableViewController.m; sourceTree = "<group>"; };
 		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
 		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
 		3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFollowViewController.h; sourceTree = "<group>"; };
@@ -184,6 +202,16 @@
 			children = (
 				3E908E741DA65338006A7CD7 /* MKEssenceViewController.h */,
 				3E908E751DA65338006A7CD7 /* MKEssenceViewController.m */,
+				3EB5AAF41DB8E03900FC2177 /* MKAllViewController.h */,
+				3EB5AAF51DB8E03900FC2177 /* MKAllViewController.m */,
+				3EB5AAF71DB8E05300FC2177 /* MKVideoViewController.h */,
+				3EB5AAF81DB8E05300FC2177 /* MKVideoViewController.m */,
+				3EB5AAFA1DB8E07200FC2177 /* MKSoundsViewController.h */,
+				3EB5AAFB1DB8E07200FC2177 /* MKSoundsViewController.m */,
+				3EB5AAFD1DB8E08000FC2177 /* MKPictureViewController.h */,
+				3EB5AAFE1DB8E08000FC2177 /* MKPictureViewController.m */,
+				3EB5AB001DB8E09900FC2177 /* MKJokerViewController.h */,
+				3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,6 +388,8 @@
 				3E908E7D1DA6B18B006A7CD7 /* MKLoginViewController.h */,
 				3E908E7E1DA6B18B006A7CD7 /* MKLoginViewController.m */,
 				3E908E7F1DA6B18B006A7CD7 /* MKLoginViewController.xib */,
+				3EB5AB031DB93D2600FC2177 /* MKTableViewController.h */,
+				3EB5AB041DB93D2600FC2177 /* MKTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -669,6 +699,7 @@
 				3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */,
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
+				3EB5AB021DB8E09900FC2177 /* MKJokerViewController.m in Sources */,
 				3E907C4C1DAC300D0087B797 /* MKMeSquareButton.m in Sources */,
 				3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
@@ -679,15 +710,20 @@
 				3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */,
 				3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */,
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
+				3EB5AAFC1DB8E07200FC2177 /* MKSoundsViewController.m in Sources */,
 				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3ED6755F1DB14FA3000D87E4 /* MKEssenceTitleButton.m in Sources */,
+				3EB5AAFF1DB8E08000FC2177 /* MKPictureViewController.m in Sources */,
 				3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */,
 				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
+				3EB5AAF61DB8E03900FC2177 /* MKAllViewController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
+				3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */,
 				3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */,
+				3EB5AB051DB93D2600FC2177 /* MKTableViewController.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
 				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
 				3EF679A61DAE99AA00D37AD4 /* MKClearCacheCell.m in Sources */,
