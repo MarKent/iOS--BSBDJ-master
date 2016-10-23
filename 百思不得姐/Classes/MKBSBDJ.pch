@@ -40,7 +40,7 @@
 #define MKRandomColor MKColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
 #define MKCustomCommonColor(v) MKColor(v,v,v)
 #define MKCommonBgColor MKCustomCommonColor(200)
-
+#define MKImageName(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
 #endif
 /***在#ifdef __OBJC__和#endif之间的内容,只拷贝到OC文件中,不会拷贝到其他语言源代码中***/

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0D86EF1DBBBF2E00049924 /* MKAllTopicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D86EE1DBBBF2E00049924 /* MKAllTopicsModel.m */; };
 		3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
 		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
@@ -68,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E0D86ED1DBBBF2E00049924 /* MKAllTopicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAllTopicsModel.h; sourceTree = "<group>"; };
+		3E0D86EE1DBBBF2E00049924 /* MKAllTopicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAllTopicsModel.m; sourceTree = "<group>"; };
 		3E3302DD1D92E3C8000C7D10 /* MKBSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKBSBDJ.pch; path = Classes/MKBSBDJ.pch; sourceTree = "<group>"; };
 		3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
 		3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 		3E908E761DA65338006A7CD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E0D86ED1DBBBF2E00049924 /* MKAllTopicsModel.h */,
+				3E0D86EE1DBBBF2E00049924 /* MKAllTopicsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
 				3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */,
+				3E0D86EF1DBBBF2E00049924 /* MKAllTopicsModel.m in Sources */,
 				3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */,
 				3EB5AB051DB93D2600FC2177 /* MKTableViewController.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
