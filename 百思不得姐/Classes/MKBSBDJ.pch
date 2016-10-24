@@ -22,6 +22,9 @@
 #import "NSString+MKFileSize.h"//文件大小
 #import "MKTableViewController.h"//通用
 
+//将请求到的数据写入plist文件
+#define MKWriteToPlist(responseObject,filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/markkent/desktop/%@.plist",filename] atomically:YES];
+
 //打印日志:模拟器测试和真机测试区分开来
 //如果模拟器测试(开发版Debug)用MKLog(...)代替NSLog()打印
 //如果真机调试(发布版Release)用此宏不打印日志,提高性能,但是用NSLog()还会继续打印

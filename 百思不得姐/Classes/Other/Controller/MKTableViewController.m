@@ -40,7 +40,7 @@
     //3.没有则创建
     if (!cell) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     
     cell.textLabel.text = [NSString stringWithFormat:@"%zd",indexPath.row];

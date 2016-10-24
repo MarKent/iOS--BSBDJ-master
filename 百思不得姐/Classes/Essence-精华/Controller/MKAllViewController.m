@@ -7,42 +7,122 @@
 //
 
 #import "MKAllViewController.h"
-#import <AFNetworking.h>
+#import "MKHTTPSessionManager.h"
 #import "MKAllTopicsModel.h"
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
+#import "MKRefreshHeader.h"
+#import "MKRefreshFooter.h"
 
 @interface MKAllViewController ()
 /* 模型数组 */
 @property (nonatomic , strong)NSMutableArray<MKAllTopicsModel *> *allTopicsModelsArr;
+/* 已加载的最后一个数据的maxtime用于上拉加载旧数据 */
+@property (nonatomic , copy)NSString *maxtime;
+/* 该模块中请求共用一个管理者 */
+@property (nonatomic , strong)MKHTTPSessionManager *manager;
 @end
 
 @implementation MKAllViewController
+#pragma mark - 共用一个SessionManager
+- (AFHTTPSessionManager *)manager {
 
+    if (!_manager) {
+        
+        _manager = [MKHTTPSessionManager manager];
+    }
+    return _manager;
+}
+
+#pragma mark - controller's cycle of life
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadTopicsData];
-    
+    [self setupRefresh];
     MKLogFunc
 }
+#pragma mark - 上下拉刷新
+- (void)setupRefresh {
+    //下拉刷新
+    self.tableView.mj_header = [MKRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopicsData)];
+    [self.tableView.mj_header beginRefreshing];
+    
+    //上拉加载更多
+    self.tableView.mj_footer = [MKRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopicsData)];
+}
 #pragma mark - 请求数据
-- (void)loadTopicsData {
+/**
+ 下拉请求数据
+ */
+- (void)loadNewTopicsData {
 
+    //取消其他网络请求任务保证不同时执行下拉和上拉请求,防止出现问题
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
     NSMutableDictionary *pamars = [NSMutableDictionary dictionary];
     pamars[@"a"] = @"list";
     pamars[@"c"] = @"data";
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        [responseObject writeToFile:@"/Users/markkent/desktop/all_topics.plist" atomically:YES];
+        //MKWriteToPlist(responseObject, @"all_topics");
+        //获取最后一条数据的maxtime
+        self.maxtime = responseObject[@"info"][@"maxtime"];
         
-        //通过字典中的数组转换成模型数组
+        //通过字典中的数组(其中也是字典)转换成模型数组
         self.allTopicsModelsArr = [MKAllTopicsModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         //刷新数据
         [self.tableView reloadData];
+        //停止下拉刷新
+        [self.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
-        MKLog(@"请求错误");
+        if (error.code == NSURLErrorCancelled) {
+            //取消任务也会调用这个failure的block
+            MKLog(@"任务取消");
+        }else {
+            MKLog(@"请求错误");
+        }
+        //不管是取消还是请求错误都停止刷新动画
+        [self.tableView.mj_header endRefreshing];
+    }];
+}
+/**
+ 上拉请求数据
+ */
+- (void)loadMoreTopicsData {
+
+    //取消其他网络请求任务保证不同时执行下拉和上拉请求,防止出现问题
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    NSMutableDictionary *pamars = [NSMutableDictionary dictionary];
+    pamars[@"a"] = @"list";
+    pamars[@"c"] = @"data";
+    pamars[@"maxtime"] = self.maxtime;
+    
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+        //MKWriteToPlist(responseObject, @"more_all_topics");
+        //再次获取最后一条数据的maxtime
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        //获取更多的数据并转换成模型放于数组中
+        NSArray<MKAllTopicsModel *> *moreArr = [MKAllTopicsModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        //将请求到的旧数据放于外层的模型数组的最后一个元素之后
+        [self.allTopicsModelsArr addObjectsFromArray:moreArr];
+        //刷新数据
+        [self.tableView reloadData];
+        //停止下拉刷新
+        [self.tableView.mj_footer endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (error.code == NSURLErrorCancelled) {
+            //取消任务也会调用这个failure的block
+            MKLog(@"任务取消");
+        }else {
+            MKLog(@"请求错误");
+        }
+        //不管是取消还是请求错误都停止刷新动画
+        [self.tableView.mj_footer endRefreshing];
     }];
 }
 #pragma mark - Table view data source
@@ -60,7 +140,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //1.确定重用标识
-    static NSString *ID = @"cell_id";
+    static NSString *ID = @"all_cell_id";
     //2.从缓存池中去cell
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     //3.没有则创建
@@ -71,7 +151,7 @@
     
     cell.textLabel.text = self.allTopicsModelsArr[indexPath.row].name;
     cell.detailTextLabel.text = self.allTopicsModelsArr[indexPath.row].text;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:self.allTopicsModelsArr[indexPath.row].profile_image] placeholderImage:MKImageName(@"imageBackground")];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:self.allTopicsModelsArr[indexPath.row].profile_image] placeholderImage:MKImageName(@"defaultUserIcon")];
     return cell;
 
     

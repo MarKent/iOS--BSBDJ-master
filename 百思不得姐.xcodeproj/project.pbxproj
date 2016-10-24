@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3E0D86EF1DBBBF2E00049924 /* MKAllTopicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D86EE1DBBBF2E00049924 /* MKAllTopicsModel.m */; };
-		3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
+		3E258CA01DBD20BD00756AA4 /* MKRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E258C9F1DBD20BD00756AA4 /* MKRefreshHeader.m */; };
 		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
 		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
-		3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */; };
-		3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */; };
+		3E7075DF1DBE1A2600EC5B7F /* MKRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075DE1DBE1A2600EC5B7F /* MKRefreshFooter.m */; };
+		3E7075F51DBE833800EC5B7F /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */; };
+		3E7075F61DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
+		3E7075F71DBE833800EC5B7F /* UIImage+MKImageStrecth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */; };
+		3E7075F81DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */; };
+		3E7075F91DBE833800EC5B7F /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EE1DBE833800EC5B7F /* UIView+SizeDecirbe.m */; };
+		3E7075FA1DBE833800EC5B7F /* MKCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075F11DBE833800EC5B7F /* MKCommonConst.m */; };
+		3E7075FB1DBE833800EC5B7F /* MKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075F41DBE833800EC5B7F /* MKHTTPSessionManager.m */; };
 		3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */; };
 		3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C421DABF9170087B797 /* MKMeFooterView.m */; };
 		3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E907C451DABFE3C0087B797 /* MKMeSpuare.m */; };
@@ -23,7 +29,6 @@
 		3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E7E1DA6B18B006A7CD7 /* MKLoginViewController.m */; };
 		3E908E811DA6B18B006A7CD7 /* MKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E908E7F1DA6B18B006A7CD7 /* MKLoginViewController.xib */; };
 		3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */; };
-		3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */; };
 		3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */; };
 		3EB5AAF61DB8E03900FC2177 /* MKAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAF51DB8E03900FC2177 /* MKAllViewController.m */; };
 		3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAF81DB8E05300FC2177 /* MKVideoViewController.m */; };
@@ -31,7 +36,6 @@
 		3EB5AAFF1DB8E08000FC2177 /* MKPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AAFE1DB8E08000FC2177 /* MKPictureViewController.m */; };
 		3EB5AB021DB8E09900FC2177 /* MKJokerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */; };
 		3EB5AB051DB93D2600FC2177 /* MKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB5AB041DB93D2600FC2177 /* MKTableViewController.m */; };
-		3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */; };
 		3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */; };
 		3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B401D9AC77C00260EFF /* MKMeViewController.m */; };
 		3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B461D9AC77C00260EFF /* MKNewViewController.m */; };
@@ -46,7 +50,6 @@
 		3ED6755F1DB14FA3000D87E4 /* MKEssenceTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED6755E1DB14FA3000D87E4 /* MKEssenceTitleButton.m */; };
 		3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */; };
 		3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */; };
-		3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */; };
 		3EF679A61DAE99AA00D37AD4 /* MKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF679A51DAE99AA00D37AD4 /* MKClearCacheCell.m */; };
 		D364CB1C2506B068FA4A3B40 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E15CBECACF4CEF8347A6E8CD /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
@@ -71,19 +74,31 @@
 /* Begin PBXFileReference section */
 		3E0D86ED1DBBBF2E00049924 /* MKAllTopicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAllTopicsModel.h; sourceTree = "<group>"; };
 		3E0D86EE1DBBBF2E00049924 /* MKAllTopicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAllTopicsModel.m; sourceTree = "<group>"; };
+		3E258C9E1DBD20BD00756AA4 /* MKRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRefreshHeader.h; sourceTree = "<group>"; };
+		3E258C9F1DBD20BD00756AA4 /* MKRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRefreshHeader.m; sourceTree = "<group>"; };
 		3E3302DD1D92E3C8000C7D10 /* MKBSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKBSBDJ.pch; path = Classes/MKBSBDJ.pch; sourceTree = "<group>"; };
-		3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
-		3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
 		3E6C41571D9C388200C4155E /* MKRecomendFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecomendFollowViewController.h; sourceTree = "<group>"; };
 		3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecomendFollowViewController.m; sourceTree = "<group>"; };
 		3E6C415A1D9C3B5000C4155E /* MKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNavigationController.h; sourceTree = "<group>"; };
 		3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNavigationController.m; sourceTree = "<group>"; };
 		3E6C415D1D9C3E1900C4155E /* MKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSettingViewController.h; sourceTree = "<group>"; };
 		3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSettingViewController.m; sourceTree = "<group>"; };
-		3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MKPlaceholderTextColor.h"; sourceTree = "<group>"; };
-		3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MKPlaceholderTextColor.m"; sourceTree = "<group>"; };
-		3E907C3B1DAB68EB0087B797 /* MKCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCommonConst.h; sourceTree = "<group>"; };
-		3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCommonConst.m; sourceTree = "<group>"; };
+		3E7075DD1DBE1A2600EC5B7F /* MKRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRefreshFooter.h; sourceTree = "<group>"; };
+		3E7075DE1DBE1A2600EC5B7F /* MKRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRefreshFooter.m; sourceTree = "<group>"; };
+		3E7075E51DBE833800EC5B7F /* NSString+MKFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKFileSize.h"; sourceTree = "<group>"; };
+		3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFileSize.m"; sourceTree = "<group>"; };
+		3E7075E71DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
+		3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
+		3E7075E91DBE833800EC5B7F /* UIImage+MKImageStrecth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MKImageStrecth.h"; sourceTree = "<group>"; };
+		3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKImageStrecth.m"; sourceTree = "<group>"; };
+		3E7075EB1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MKPlaceholderTextColor.h"; sourceTree = "<group>"; };
+		3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MKPlaceholderTextColor.m"; sourceTree = "<group>"; };
+		3E7075ED1DBE833800EC5B7F /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
+		3E7075EE1DBE833800EC5B7F /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
+		3E7075F01DBE833800EC5B7F /* MKCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCommonConst.h; sourceTree = "<group>"; };
+		3E7075F11DBE833800EC5B7F /* MKCommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCommonConst.m; sourceTree = "<group>"; };
+		3E7075F31DBE833800EC5B7F /* MKHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHTTPSessionManager.h; sourceTree = "<group>"; };
+		3E7075F41DBE833800EC5B7F /* MKHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHTTPSessionManager.m; sourceTree = "<group>"; };
 		3E907C3E1DAB6C2A0087B797 /* MKMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeCell.h; sourceTree = "<group>"; };
 		3E907C3F1DAB6C2A0087B797 /* MKMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMeCell.m; sourceTree = "<group>"; };
 		3E907C411DABF9170087B797 /* MKMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeFooterView.h; sourceTree = "<group>"; };
@@ -100,8 +115,6 @@
 		3E908E7F1DA6B18B006A7CD7 /* MKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKLoginViewController.xib; sourceTree = "<group>"; };
 		3E908E821DA7C3D5006A7CD7 /* MKQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKQuickLoginButton.h; sourceTree = "<group>"; };
 		3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKQuickLoginButton.m; sourceTree = "<group>"; };
-		3E908E881DA82570006A7CD7 /* UIImage+MKImageStrecth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MKImageStrecth.h"; sourceTree = "<group>"; };
-		3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKImageStrecth.m"; sourceTree = "<group>"; };
 		3E908E8B1DA8E818006A7CD7 /* MKLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLoginRegisterTextField.h; sourceTree = "<group>"; };
 		3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLoginRegisterTextField.m; sourceTree = "<group>"; };
 		3EB5AAF41DB8E03900FC2177 /* MKAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAllViewController.h; sourceTree = "<group>"; };
@@ -116,8 +129,6 @@
 		3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJokerViewController.m; sourceTree = "<group>"; };
 		3EB5AB031DB93D2600FC2177 /* MKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTableViewController.h; sourceTree = "<group>"; };
 		3EB5AB041DB93D2600FC2177 /* MKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTableViewController.m; sourceTree = "<group>"; };
-		3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
-		3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SizeDecirbe.m"; sourceTree = "<group>"; };
 		3EBF4B391D9AC77C00260EFF /* MKFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFollowViewController.h; sourceTree = "<group>"; };
 		3EBF4B3A1D9AC77C00260EFF /* MKFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFollowViewController.m; sourceTree = "<group>"; };
 		3EBF4B3F1D9AC77C00260EFF /* MKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMeViewController.h; sourceTree = "<group>"; };
@@ -146,8 +157,6 @@
 		3EF6799C1DAD611A00D37AD4 /* MKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWebViewController.h; sourceTree = "<group>"; };
 		3EF6799D1DAD611A00D37AD4 /* MKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWebViewController.m; sourceTree = "<group>"; };
 		3EF6799E1DAD611A00D37AD4 /* MKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKWebViewController.xib; sourceTree = "<group>"; };
-		3EF679A11DAE395700D37AD4 /* NSString+MKFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKFileSize.h"; sourceTree = "<group>"; };
-		3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFileSize.m"; sourceTree = "<group>"; };
 		3EF679A41DAE99AA00D37AD4 /* MKClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKClearCacheCell.h; sourceTree = "<group>"; };
 		3EF679A51DAE99AA00D37AD4 /* MKClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKClearCacheCell.m; sourceTree = "<group>"; };
 		4C04C8CFEB71AA116E38AF9D /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,13 +190,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E907C3A1DAB68C50087B797 /* Macros */ = {
+		3E7075E41DBE833800EC5B7F /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3E907C3B1DAB68EB0087B797 /* MKCommonConst.h */,
-				3E907C3C1DAB68EB0087B797 /* MKCommonConst.m */,
+				3E7075E51DBE833800EC5B7F /* NSString+MKFileSize.h */,
+				3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */,
+				3E7075E71DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.h */,
+				3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */,
+				3E7075E91DBE833800EC5B7F /* UIImage+MKImageStrecth.h */,
+				3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */,
+				3E7075EB1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.h */,
+				3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */,
+				3E7075ED1DBE833800EC5B7F /* UIView+SizeDecirbe.h */,
+				3E7075EE1DBE833800EC5B7F /* UIView+SizeDecirbe.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3E7075EF1DBE833800EC5B7F /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				3E7075F01DBE833800EC5B7F /* MKCommonConst.h */,
+				3E7075F11DBE833800EC5B7F /* MKCommonConst.m */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		3E7075F21DBE833800EC5B7F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3E7075F31DBE833800EC5B7F /* MKHTTPSessionManager.h */,
+				3E7075F41DBE833800EC5B7F /* MKHTTPSessionManager.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		3E908E721DA65338006A7CD7 /* Essence-精华 */ = {
@@ -235,23 +270,6 @@
 				3ED6755E1DB14FA3000D87E4 /* MKEssenceTitleButton.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3EBF4B2E1D9AC77C00260EFF /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				3EBF4B2F1D9AC77C00260EFF /* UIView+SizeDecirbe.h */,
-				3EBF4B301D9AC77C00260EFF /* UIView+SizeDecirbe.m */,
-				3E51238A1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.h */,
-				3E51238B1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m */,
-				3E908E881DA82570006A7CD7 /* UIImage+MKImageStrecth.h */,
-				3E908E891DA82570006A7CD7 /* UIImage+MKImageStrecth.m */,
-				3E907BF81DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.h */,
-				3E907BF91DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m */,
-				3EF679A11DAE395700D37AD4 /* NSString+MKFileSize.h */,
-				3EF679A21DAE395700D37AD4 /* NSString+MKFileSize.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		3EBF4B371D9AC77C00260EFF /* Follow-关注 */ = {
@@ -379,6 +397,9 @@
 				3EBF4B4C1D9AC77C00260EFF /* Controller */,
 				3EBF4B4F1D9AC77C00260EFF /* Model */,
 				3EBF4B501D9AC77C00260EFF /* View */,
+				3E7075E41DBE833800EC5B7F /* Category */,
+				3E7075EF1DBE833800EC5B7F /* Macros */,
+				3E7075F21DBE833800EC5B7F /* Tools */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -415,6 +436,10 @@
 				3E908E831DA7C3D5006A7CD7 /* MKQuickLoginButton.m */,
 				3E908E8B1DA8E818006A7CD7 /* MKLoginRegisterTextField.h */,
 				3E908E8C1DA8E818006A7CD7 /* MKLoginRegisterTextField.m */,
+				3E258C9E1DBD20BD00756AA4 /* MKRefreshHeader.h */,
+				3E258C9F1DBD20BD00756AA4 /* MKRefreshHeader.m */,
+				3E7075DD1DBE1A2600EC5B7F /* MKRefreshFooter.h */,
+				3E7075DE1DBE1A2600EC5B7F /* MKRefreshFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -487,8 +512,6 @@
 				3EBF4B431D9AC77C00260EFF /* New-新帖 */,
 				3EBF4B371D9AC77C00260EFF /* Follow-关注 */,
 				3EBF4B3D1D9AC77C00260EFF /* Me-我 */,
-				3EBF4B2E1D9AC77C00260EFF /* Category */,
-				3E907C3A1DAB68C50087B797 /* Macros */,
 				3EBF4B491D9AC77C00260EFF /* Other */,
 			);
 			path = Classes;
@@ -701,39 +724,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E908E8D1DA8E818006A7CD7 /* MKLoginRegisterTextField.m in Sources */,
-				3E907C3D1DAB68EB0087B797 /* MKCommonConst.m in Sources */,
+				3E7075F81DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3EBF4B561D9AC77C00260EFF /* MKMeViewController.m in Sources */,
+				3E7075FB1DBE833800EC5B7F /* MKHTTPSessionManager.m in Sources */,
 				3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */,
 				3EB5AB021DB8E09900FC2177 /* MKJokerViewController.m in Sources */,
 				3E907C4C1DAC300D0087B797 /* MKMeSquareButton.m in Sources */,
+				3E7075F51DBE833800EC5B7F /* NSString+MKFileSize.m in Sources */,
+				3E7075F71DBE833800EC5B7F /* UIImage+MKImageStrecth.m in Sources */,
 				3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
-				3E51238C1D9BF35800A3A6B1 /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
-				3EBF4B531D9AC77C00260EFF /* UIView+SizeDecirbe.m in Sources */,
+				3E7075F91DBE833800EC5B7F /* UIView+SizeDecirbe.m in Sources */,
 				3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
 				3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */,
-				3E908E8A1DA82570006A7CD7 /* UIImage+MKImageStrecth.m in Sources */,
+				3E258CA01DBD20BD00756AA4 /* MKRefreshHeader.m in Sources */,
+				3E7075DF1DBE1A2600EC5B7F /* MKRefreshFooter.m in Sources */,
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
 				3EB5AAFC1DB8E07200FC2177 /* MKSoundsViewController.m in Sources */,
+				3E7075FA1DBE833800EC5B7F /* MKCommonConst.m in Sources */,
 				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
 				3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */,
 				3ED6755F1DB14FA3000D87E4 /* MKEssenceTitleButton.m in Sources */,
 				3EB5AAFF1DB8E08000FC2177 /* MKPictureViewController.m in Sources */,
 				3E907C431DABF9170087B797 /* MKMeFooterView.m in Sources */,
-				3E907BFA1DAA847A0087B797 /* UITextField+MKPlaceholderTextColor.m in Sources */,
 				3EB5AAF61DB8E03900FC2177 /* MKAllViewController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
 				3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */,
 				3E0D86EF1DBBBF2E00049924 /* MKAllTopicsModel.m in Sources */,
-				3EF679A31DAE395700D37AD4 /* NSString+MKFileSize.m in Sources */,
 				3EB5AB051DB93D2600FC2177 /* MKTableViewController.m in Sources */,
 				3E908E781DA65338006A7CD7 /* MKEssenceViewController.m in Sources */,
 				3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */,
 				3EF679A61DAE99AA00D37AD4 /* MKClearCacheCell.m in Sources */,
 				3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */,
+				3E7075F61DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

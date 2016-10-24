@@ -7,7 +7,7 @@
 //
 
 #import "MKMeFooterView.h"
-#import <AFNetworking.h>
+#import "MKHTTPSessionManager.h"
 #import "MKMeSpuare.h"
 #import <MJExtension.h>
 #import "MKMeSquareButton.h"
@@ -24,7 +24,7 @@
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+        [[MKHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
             
             //字典数组-->模型数组
             NSMutableArray *squaresArr = [MKMeSpuare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
