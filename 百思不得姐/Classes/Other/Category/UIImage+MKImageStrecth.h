@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (MKImageStrecth)
-+ (UIImage *)returnNewImage:(NSString *)iamgeName;
++ (UIImage *)mk_returnNewImage:(NSString *)iamgeName;
 @end

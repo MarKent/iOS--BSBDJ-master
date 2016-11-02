@@ -19,4 +19,7 @@
 @property (nonatomic , assign)CGFloat mk_centerX;
 @property (nonatomic , assign)CGFloat mk_centerY;
 
+//从xib加载视图
++ (instancetype)mk_viewFromXib;
+
 @end

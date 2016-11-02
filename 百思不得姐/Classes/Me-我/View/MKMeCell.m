@@ -15,7 +15,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         //cell背景
-        self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage returnNewImage:@"mainCellBackground"]];
+        self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage mk_returnNewImage:@"mainCellBackground"]];
         //文字颜色
         self.textLabel.textColor = [UIColor darkGrayColor];
         //cell中的图片填充模式

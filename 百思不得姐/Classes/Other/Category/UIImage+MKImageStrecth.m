@@ -10,7 +10,7 @@
 
 @implementation UIImage (MKImageStrecth)
 
-+ (UIImage *)returnNewImage:(NSString *)iamgeName {
++ (UIImage *)mk_returnNewImage:(NSString *)iamgeName {
 
     // 加载图片
     UIImage *image = [UIImage imageNamed:iamgeName];

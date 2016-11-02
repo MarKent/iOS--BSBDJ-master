@@ -30,10 +30,10 @@
 - (void)changeButtonImage {
 
     // 重新设置登录注册按钮的背景图片
-    [self.loginBtn setBackgroundImage:[UIImage returnNewImage:@"loginBtnBg"] forState:UIControlStateNormal];
-    [self.loginBtn setBackgroundImage:[UIImage returnNewImage:@"loginBtnBgClick"] forState:UIControlStateHighlighted];
-    [self.registerBtn setBackgroundImage:[UIImage returnNewImage:@"loginBtnBg"] forState:UIControlStateNormal];
-    [self.registerBtn setBackgroundImage:[UIImage returnNewImage:@"loginBtnBgClick"] forState:UIControlStateHighlighted];
+    [self.loginBtn setBackgroundImage:[UIImage mk_returnNewImage:@"loginBtnBg"] forState:UIControlStateNormal];
+    [self.loginBtn setBackgroundImage:[UIImage mk_returnNewImage:@"loginBtnBgClick"] forState:UIControlStateHighlighted];
+    [self.registerBtn setBackgroundImage:[UIImage mk_returnNewImage:@"loginBtnBg"] forState:UIControlStateNormal];
+    [self.registerBtn setBackgroundImage:[UIImage mk_returnNewImage:@"loginBtnBgClick"] forState:UIControlStateHighlighted];
 }
 #pragma mark - 按钮点击
 //关闭界面

@@ -32,8 +32,8 @@
     //标题
     self.navigationItem.title = @"我的";
     //设置按钮
-    UIBarButtonItem *setItem = [UIBarButtonItem itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
-    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    UIBarButtonItem *setItem = [UIBarButtonItem mk_itemWithNormalImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    UIBarButtonItem *moonItem = [UIBarButtonItem mk_itemWithNormalImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
     self.navigationItem.rightBarButtonItems = @[setItem,moonItem];
 }
 - (void)setupTableView {

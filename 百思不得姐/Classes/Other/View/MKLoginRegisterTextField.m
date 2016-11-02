@@ -24,7 +24,7 @@
     //光标颜色
     self.tintColor = [UIColor whiteColor];
     //占位符文字默认颜色
-    self.placeholderTextColor = [UIColor grayColor];
+    self.mk_placeholderTextColor = [UIColor grayColor];
     
     //利用一次性通知方法  通知中的block监听
     id observer1 = [[NSNotificationCenter defaultCenter]addObserverForName:UITextFieldTextDidBeginEditingNotification
@@ -32,7 +32,7 @@
                      queue:[NSOperationQueue mainQueue]
                 usingBlock:^(NSNotification * _Nonnull note) {
         
-                    self.placeholderTextColor = [UIColor whiteColor];
+                    self.mk_placeholderTextColor = [UIColor whiteColor];
                     [[NSNotificationCenter defaultCenter] removeObserver:observer1];
      
     }];
@@ -43,7 +43,7 @@
                      queue:[NSOperationQueue mainQueue]
                 usingBlock:^(NSNotification * _Nonnull note) {
         
-                    self.placeholderTextColor = [UIColor grayColor];
+                    self.mk_placeholderTextColor = [UIColor grayColor];
                     [[NSNotificationCenter defaultCenter] removeObserver:observer2];
     }];
 }

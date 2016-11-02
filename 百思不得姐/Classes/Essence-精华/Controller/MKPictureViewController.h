@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mark Kent. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MKBaseTopicViewController.h"
 
-@interface MKPictureViewController : MKTableViewController
+@interface MKPictureViewController : MKBaseTopicViewController
 
 @end

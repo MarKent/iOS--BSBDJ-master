@@ -20,7 +20,11 @@
 #import "UITextField+MKPlaceholderTextColor.h"//占位文字颜色
 #import "MKCommonConst.h"//全局常量
 #import "NSString+MKFileSize.h"//文件大小
-#import "MKTableViewController.h"//通用
+#import "NSDate+MKTimeHandle.h"//时间的一些处理
+#import "NSCalendar+MKCalendarHandle.h"
+
+//系统版本判断
+#define SYSTEM_VERSION_MORE_THAN_OR_EQULE_TO(v) ([[UIDevice currentDevice].systemVersion compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 //将请求到的数据写入plist文件
 #define MKWriteToPlist(responseObject,filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/markkent/desktop/%@.plist",filename] atomically:YES];

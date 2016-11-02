@@ -10,6 +10,6 @@
 
 @interface UITextField (MKPlaceholderTextColor)
 
-@property (nonatomic , strong)UIColor *placeholderTextColor;
+@property (nonatomic , strong)UIColor *mk_placeholderTextColor;
 
 @end

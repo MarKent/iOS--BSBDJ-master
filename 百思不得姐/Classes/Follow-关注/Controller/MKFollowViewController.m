@@ -25,7 +25,7 @@
     self.navigationItem.title = @"我的关注";
     
     //设置左侧按钮
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem mk_itemWithNormalImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
     
 }
 

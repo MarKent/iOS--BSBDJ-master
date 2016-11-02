@@ -10,7 +10,11 @@
 
 @implementation UIView (SizeDecirbe)
 
+//从xib加载视图
++ (instancetype)mk_viewFromXib {
 
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+}
 /**
  Width
 
@@ -131,4 +135,5 @@
     
     return self.center.y;
 }
+
 @end

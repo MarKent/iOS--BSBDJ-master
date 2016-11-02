@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (MKCommonBarButtonItem)
-+(instancetype)itemWithNormalImage:(NSString *)normalImageName
++(instancetype)mk_itemWithNormalImage:(NSString *)normalImageName
                          highImage:(NSString *)highImageName
                             target:(id)target
                             action:(SEL)action;

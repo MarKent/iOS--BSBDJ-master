@@ -62,7 +62,7 @@
     essenceScrollView.pagingEnabled = YES;
     essenceScrollView.contentSize = CGSizeMake(essenceScrollView.mk_width*self.childViewControllers.count, 0);
     [self.view addSubview:essenceScrollView];
-    essenceScrollView.backgroundColor = MKRandomColor;
+    essenceScrollView.backgroundColor = MKCommonBgColor;
     self.scrolleView = essenceScrollView;
     self.scrolleView.delegate = self;
     
@@ -76,7 +76,7 @@
 
     //标题栏父视图
     UIView *titlesView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.mk_width, 35)];
-    titlesView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
+    titlesView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     //添加按钮
@@ -140,7 +140,7 @@
     //设置导航栏标题
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //设置左侧按钮
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithNormalImage:@"MainTagSubIcon"
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem mk_itemWithNormalImage:@"MainTagSubIcon"
                                                                   highImage:@"MainTagSubIconClick"
                                                                   target:self
                                                                   action:@selector(tagClick)];

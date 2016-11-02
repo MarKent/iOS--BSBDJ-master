@@ -12,7 +12,7 @@ static NSString * const MKPlaceholderTextColor = @"placeholderLabel.textColor";
 
 @implementation UITextField (MKPlaceholderTextColor)
 
-- (void)setPlaceholderTextColor:(UIColor *)placeholderTextColor {
+- (void)setMk_placeholderTextColor:(UIColor *)mk_placeholderTextColor {
 
     /*
      有占位内容才会有placeholderLabel,所以要提前设置一个,使得内容和颜色的设置顺
@@ -24,16 +24,16 @@ static NSString * const MKPlaceholderTextColor = @"placeholderLabel.textColor";
     self.placeholder = oldPlaceholderText;
     
     //当设置颜色为nil时,使得占位文字颜色为默认(不设置的话还是默认)
-    if (self.placeholderTextColor == nil) {
+    if (self.mk_placeholderTextColor == nil) {
         
         [self setValue:[UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22] forKeyPath:MKPlaceholderTextColor];
     }
     
     //设置颜色
-    [self setValue:placeholderTextColor forKeyPath:MKPlaceholderTextColor];
+    [self setValue:mk_placeholderTextColor forKeyPath:MKPlaceholderTextColor];
 }
 
-- (UIColor *)placeholderTextColor {
+- (UIColor *)mk_placeholderTextColor {
 
     return [self valueForKeyPath:MKPlaceholderTextColor];
 }
