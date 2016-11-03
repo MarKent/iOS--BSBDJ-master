@@ -118,7 +118,7 @@
         self.topicVideoView.topicModel = allTopicModel;
         self.topicPictureView.hidden = YES;
         self.topicSoundsView.hidden = YES;
-    }else if (allTopicModel.type == MKTopicTypeWord){//段子
+    }else if (allTopicModel.type == MKTopicTypeJoker){//段子
     
         self.topicPictureView.hidden = YES;
         self.topicSoundsView.hidden = YES;

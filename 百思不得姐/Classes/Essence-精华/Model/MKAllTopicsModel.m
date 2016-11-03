@@ -27,7 +27,7 @@
     CGSize textSize = [self.text boundingRectWithSize:rectSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size;
     _cellHeight += textSize.height + MKMargin;
     //3.中间内容 非纯段子的帖子情况下
-    if (self.type != MKTopicTypeWord) {
+    if (self.type != MKTopicTypeJoker) {
         
         CGFloat contentH = contentW * self.height / self.width;
         CGFloat contentX = MKMargin;

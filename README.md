@@ -327,3 +327,160 @@ if ([view.window.rootViewController isViewLoaded]){}
 ```
 ## bounds.origin.x/y = contentOffset.x/y
 
+## iOS中保存图片的方法
+### 用iOS9之后的方法 <UIPhoto/UIPhoto.h>
+
+- 0.判断手机系统对应用访问系统相册的权限状态
+
+```objc
+    
+    //判断授权状态
+    PHAuthorrizationStatus status = [PHPhotoLibrary authorrizationStatus];
+    if (status == PHAuthorizationStatusRestricted) {// 存在家长控制,无法访问系统相册
+        [SVProgressHUD showErrorWithStatus:@"系统原因,无法访问相册"];
+    }else if (status == PHAuthorizationStatusDenie) {//不允许应用访问系统相册
+        MKLog(@"您已拒绝访问系统相册,请前去设置允许");
+    }else if (status == PHAuthorizationStatusAuthorized) {//已允许访问
+        [self saveImage];
+    }else if (status == PHAuthorizationStatusDetermined) {//尚未选择是否允许
+        //跳出请求授权弹框
+        [PHPhotoLibrary requestAuthirization:^(PHAuthorizationStatus status) {
+            //如果允许
+            if (status == PHAuthorizationStatusAuthorized) {
+                [self saveImage];
+            }else if (status == PHAuthorizationStatusDenie) {
+                [SVProgressHUD showErrorWithStatus:@"您未允许访问相册"]; 
+        }];
+    }
+```
+
+- 保存图片- (void)saveImage;
+
+```objc
+    
+    //如果要对手机相册进行增删改操作,必须放在[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{} completionHandler:^{}];的bolock块中操作
+    //获取保存的图片和创建的相册的本地标识
+    __block NSString *assetIdentifier = nil;
+    __block NSString *assetCollectionIdentifier = nil;
+    //1.保存图片到相机胶卷中
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        [PHAssetCreationRequest creationRequestForAssetFromImage:self.imageView.image];
+    } completionHandler:^{
+        if (success == NO) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [SVProgressHUD showErrorWithStatus:@"图片保存失败!"];
+            });
+            return;
+        }
+        //2.创建应用的相册
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:@"百思不得姐"];
+        } completionHandler:^{
+            if (success == NO) {
+                [SVProgressHUD showErrorWithStatus:@"相册创建失败"];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [SVProgressHUD showErrorWithStatus:@"相册创建失败!"];
+                });
+                return;
+             }
+            //3.添加相机胶卷中的图片到新建的相册中
+            [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+                //获取要保存的图片
+                PHAsset *myAsset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetIdentifier] options:nil].lastObject;
+                //将图片保存到相册中
+                PHAssetCollectionChangeRequest *collectionRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:myCollection];
+                [collectionRequest addAssets:@[myAsset]];
+            } completionHandler:^{
+                if (success == NO) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [SVProgressHUD showErrorWithStatus:@"图片保存失败!"];
+                    });
+                    return;
+                }else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [SVProgressHUD showSuccessWithStatus:@"图片保存成功!"];
+                    });
+                }
+            }];
+        }];
+    }];
+```
+## 完整的保存图片方法(要判断是否已创建过本应用相册)
+
+```objc
+  
+    -(void)saveImage{
+        /***在Photo.h框架中
+         *对系统相册的增删改操作,都要在
+          [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{}
+            completionHandler:^(BOOL success, NSError * _Nullable error) {}];
+          这个方法中的block块中异步进行
+         *PHAsset : 一个资源,如一张图片或一个视频
+         *PHAssetsCollection : 相册
+         ***/
+        
+        //获取保存的图片和创建的相册的本地标识
+        __block NSString *assetIdentifier = nil;
+        //2.保存图片到系统相机胶卷
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            //在系统相机胶卷中创建(即保存)一张带有本地标识的图片
+            //获取保存的图片的标识
+            assetIdentifier = [PHAssetCreationRequest creationRequestForAssetFromImage:self.imageView.image].placeholderForCreatedAsset.localIdentifier;
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success == NO) {
+                [self showError];
+                return;
+            }
+            //获取相册(可能是新建的)
+            PHAssetCollection *myCollection = [self getAssetCollection];
+            //4.保存图片到本应用相册
+            [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+                //获取要保存的图片
+                PHAsset *myAsset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetIdentifier] options:nil].lastObject;
+                //将图片保存到相册中
+                PHAssetCollectionChangeRequest *collectionRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:myCollection];
+                [collectionRequest addAssets:@[myAsset]];
+            } completionHandler:^(BOOL success, NSError * _Nullable error) {
+                if (success == YES) {
+                    [self showSuccess];
+                }else {
+                    [self showError];
+                    return;
+                }
+            }];
+        }];
+    }
+    /**
+     从系统相册中获取曾经创建过的相册
+     @return nil或系统相册中已有的相册
+     */
+    - (PHAssetCollection *)getAssetCollection {
+        //返回已创建过的在系统相册中的相册
+        PHFetchResult *createdCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+        for (PHAssetCollection *createdCollection in createdCollections) {
+            if ([createdCollection.localizedTitle isEqualToString:MKBSBDJAlbumName]) {
+                return createdCollection;
+            }
+        }
+        //返回新的相册
+        __block NSString *assetCollectionIdentifier = nil;
+        NSError *error = nil;
+        [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{//同步创建,如果封装方法就用这个
+            assetCollectionIdentifier = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:MKBSBDJAlbumName].placeholderForCreatedAssetCollection.localIdentifier;
+        } error:&error];
+        if (error) return nil;
+        PHAssetCollection *newColletion = [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[assetCollectionIdentifier] options:nil].lastObject;
+        return newColletion;
+    }
+    - (void)showSuccess {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD showSuccessWithStatus:@"图片保存成功!"];
+        });
+    }
+    - (void)showError {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD showErrorWithStatus:@"图片保存失败!"];
+        });
+    }
+```
+

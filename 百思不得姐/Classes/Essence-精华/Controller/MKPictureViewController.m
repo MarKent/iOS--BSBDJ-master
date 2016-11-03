@@ -20,4 +20,8 @@
    
 }
 
+#pragma mark - 复写父类方法传数据类型值
+- (MKTopicType)topicType {
+    return MKTopicTypePicture;
+}
 @end

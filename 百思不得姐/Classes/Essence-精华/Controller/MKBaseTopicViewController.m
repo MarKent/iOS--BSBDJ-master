@@ -26,6 +26,10 @@ static NSString *topicCellIdentifyId = @"topic_cell";
 @end
 
 @implementation MKBaseTopicViewController
+//仅用于消除编译器警告
+- (MKTopicType)topicType {
+    return 0;
+}
 #pragma mark - 懒加载,共用一个SessionManager
 - (AFHTTPSessionManager *)manager {
     
@@ -75,7 +79,7 @@ static NSString *topicCellIdentifyId = @"topic_cell";
     NSMutableDictionary *pamars = [NSMutableDictionary dictionary];
     pamars[@"a"] = @"list";
     pamars[@"c"] = @"data";
-    pamars[@"type"] = @"1";
+    pamars[@"type"] = @([self topicType]);
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //MKWriteToPlist(responseObject, @"all_topics");
@@ -112,7 +116,7 @@ static NSString *topicCellIdentifyId = @"topic_cell";
     pamars[@"a"] = @"list";
     pamars[@"c"] = @"data";
     pamars[@"maxtime"] = self.maxtime;
-    pamars[@"type"] = @"1";
+    pamars[@"type"] = @(self.topicType);
     
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         

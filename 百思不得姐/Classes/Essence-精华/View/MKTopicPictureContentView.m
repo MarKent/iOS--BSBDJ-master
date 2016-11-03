@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "MKAllTopicsModel.h"
 #import <DALabeledCircularProgressView.h>
+#import "MKSeeBigPictureViewController.h"
 
 @implementation MKTopicPictureContentView
 
@@ -21,8 +22,13 @@
     
     self.progressView.progressLabel.textColor = [UIColor whiteColor];
     self.progressView.roundedCorners = 5;
+    
+    //给图片添加点击手势
+    self.picture.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigPicture)];
+    [self.picture addGestureRecognizer:tap];
 }
-
+#pragma mark - 赋值
 - (void)setTopicModel:(MKAllTopicsModel *)topicModel {
 
     _topicModel = topicModel;
@@ -90,10 +96,13 @@
      */
 }
 
-
-
+#pragma mark - 事件监听
 - (IBAction)seeBigPicture {
-    MKLogFunc
+    //MKLogFunc
+    MKSeeBigPictureViewController *seeBigVc = [[MKSeeBigPictureViewController alloc] init];
+    seeBigVc.topicModel = self.topicModel;
+    //[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeBigVc animated:YES completion:NULL];
+    [self.window.rootViewController presentViewController:seeBigVc animated:YES completion:NULL];
 }
 
 @end

@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 @class MKCommentModel;
 
-typedef NS_OPTIONS(NSUInteger, MKTopicype) {
-
+typedef NS_OPTIONS(NSUInteger, MKTopicType) {
+    /** 全部 */
+    MKTopicTypeAll = 1,
     /** 图片 */
     MKTopicTypePicture = 10,
     /** 段子 */
-    MKTopicTypeWord = 29,
+    MKTopicTypeJoker = 29,
     /** 声音 */
     MKTopicTypeVoice = 31,
     /** 视频 */
@@ -41,7 +42,7 @@ typedef NS_OPTIONS(NSUInteger, MKTopicype) {
 /** 最热评论 */
 @property (nonatomic , strong)NSArray *top_cmt;
 /** 返回类型 */
-@property (nonatomic , assign)MKTopicype type;
+@property (nonatomic , assign)MKTopicType type;
 /** 返回的中间内容的宽 */
 @property (nonatomic , assign)CGFloat width;
 /** 返回的中间内容的高 */

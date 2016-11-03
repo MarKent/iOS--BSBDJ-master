@@ -19,6 +19,8 @@
 		3E65CA931DC7390600354AD4 /* MKTopicSoundsContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E65CA921DC7390600354AD4 /* MKTopicSoundsContentView.xib */; };
 		3E65CA951DC7390E00354AD4 /* MKTopicVideoContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E65CA941DC7390E00354AD4 /* MKTopicVideoContentView.xib */; };
 		3E67B8521DCA53290025C27A /* MKBaseTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E67B8511DCA53290025C27A /* MKBaseTopicViewController.m */; };
+		3E67B8561DCA5D050025C27A /* MKSeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E67B8541DCA5D050025C27A /* MKSeeBigPictureViewController.m */; };
+		3E67B8571DCA5D050025C27A /* MKSeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E67B8551DCA5D050025C27A /* MKSeeBigPictureViewController.xib */; };
 		3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */; };
 		3E6C415C1D9C3B5000C4155E /* MKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415B1D9C3B5000C4155E /* MKNavigationController.m */; };
 		3E6C415F1D9C3E1900C4155E /* MKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C415E1D9C3E1900C4155E /* MKSettingViewController.m */; };
@@ -107,6 +109,9 @@
 		3E65CA941DC7390E00354AD4 /* MKTopicVideoContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKTopicVideoContentView.xib; sourceTree = "<group>"; };
 		3E67B8501DCA53290025C27A /* MKBaseTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTopicViewController.h; sourceTree = "<group>"; };
 		3E67B8511DCA53290025C27A /* MKBaseTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTopicViewController.m; sourceTree = "<group>"; };
+		3E67B8531DCA5D050025C27A /* MKSeeBigPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSeeBigPictureViewController.h; sourceTree = "<group>"; };
+		3E67B8541DCA5D050025C27A /* MKSeeBigPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSeeBigPictureViewController.m; sourceTree = "<group>"; };
+		3E67B8551DCA5D050025C27A /* MKSeeBigPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKSeeBigPictureViewController.xib; sourceTree = "<group>"; };
 		3E6C41571D9C388200C4155E /* MKRecomendFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecomendFollowViewController.h; sourceTree = "<group>"; };
 		3E6C41581D9C388200C4155E /* MKRecomendFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecomendFollowViewController.m; sourceTree = "<group>"; };
 		3E6C415A1D9C3B5000C4155E /* MKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNavigationController.h; sourceTree = "<group>"; };
@@ -293,6 +298,9 @@
 				3EB5AAFE1DB8E08000FC2177 /* MKPictureViewController.m */,
 				3EB5AB001DB8E09900FC2177 /* MKJokerViewController.h */,
 				3EB5AB011DB8E09900FC2177 /* MKJokerViewController.m */,
+				3E67B8531DCA5D050025C27A /* MKSeeBigPictureViewController.h */,
+				3E67B8541DCA5D050025C27A /* MKSeeBigPictureViewController.m */,
+				3E67B8551DCA5D050025C27A /* MKSeeBigPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -663,6 +671,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YPV45H24V3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					3ED223EE1D916F66005A3EAC = {
 						CreatedOnToolsVersion = 8.0;
@@ -709,6 +722,7 @@
 				3E908E811DA6B18B006A7CD7 /* MKLoginViewController.xib in Resources */,
 				3E65CA8B1DC738CE00354AD4 /* MKTopicPictureContentView.xib in Resources */,
 				3E8E00B81DBF5BA60087C052 /* MKTopicCell.xib in Resources */,
+				3E67B8571DCA5D050025C27A /* MKSeeBigPictureViewController.xib in Resources */,
 				3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */,
 				3E65CA931DC7390600354AD4 /* MKTopicSoundsContentView.xib in Resources */,
 				3ED223E41D916F66005A3EAC /* Main.storyboard in Resources */,
@@ -805,6 +819,7 @@
 				3E258CA01DBD20BD00756AA4 /* MKRefreshHeader.m in Sources */,
 				3E7075DF1DBE1A2600EC5B7F /* MKRefreshFooter.m in Sources */,
 				3E3D90341DC5373C00C7A77B /* MKModelConfig.m in Sources */,
+				3E67B8561DCA5D050025C27A /* MKSeeBigPictureViewController.m in Sources */,
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
 				3EB5AAFC1DB8E07200FC2177 /* MKSoundsViewController.m in Sources */,
 				3E67B8521DCA53290025C27A /* MKBaseTopicViewController.m in Sources */,
