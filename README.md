@@ -421,6 +421,7 @@ if ([view.window.rootViewController isViewLoaded]){}
         
         //获取保存的图片和创建的相册的本地标识
         __block NSString *assetIdentifier = nil;
+	__weak typedof(self) weakSelf = self;
         //2.保存图片到系统相机胶卷
         [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
             //在系统相机胶卷中创建(即保存)一张带有本地标识的图片
@@ -428,7 +429,7 @@ if ([view.window.rootViewController isViewLoaded]){}
             assetIdentifier = [PHAssetCreationRequest creationRequestForAssetFromImage:self.imageView.image].placeholderForCreatedAsset.localIdentifier;
         } completionHandler:^(BOOL success, NSError * _Nullable error) {
             if (success == NO) {
-                [self showError];
+                [weakSelf showError];
                 return;
             }
             //获取相册(可能是新建的)
@@ -442,9 +443,9 @@ if ([view.window.rootViewController isViewLoaded]){}
                 [collectionRequest addAssets:@[myAsset]];
             } completionHandler:^(BOOL success, NSError * _Nullable error) {
                 if (success == YES) {
-                    [self showSuccess];
+                    [weakSelf showSuccess];
                 }else {
-                    [self showError];
+                    [weakSelf showError];
                     return;
                 }
             }];
