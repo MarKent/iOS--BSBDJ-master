@@ -12,3 +12,6 @@
 CGFloat const MKMargin = 10;
 /** 通用小间距 */
 CGFloat const MKSmallMargin = MKMargin*0.5;
+
+/** 通用的URL */
+NSString * const MKCommonURL = @"http://api.budejie.com/api/api_open.php";

@@ -31,7 +31,7 @@ static NSString *topicCellIdentifyId = @"topic_cell";
     return 0;
 }
 #pragma mark - 懒加载,共用一个SessionManager
-- (AFHTTPSessionManager *)manager {
+- (MKHTTPSessionManager *)manager {
     
     if (!_manager) {
         
@@ -76,32 +76,35 @@ static NSString *topicCellIdentifyId = @"topic_cell";
     //取消其他网络请求任务保证不同时执行下拉和上拉请求,防止出现问题
     [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
     
+    __weak typeof(self) weakSelf = self;
+    
     NSMutableDictionary *pamars = [NSMutableDictionary dictionary];
     pamars[@"a"] = @"list";
     pamars[@"c"] = @"data";
     pamars[@"type"] = @([self topicType]);
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:MKCommonURL parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //MKWriteToPlist(responseObject, @"all_topics");
         //获取最后一条数据的maxtime
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         //通过字典中的数组(其中也是字典)转换成模型数组
-        self.allTopicsModelsArr = [MKAllTopicsModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        weakSelf.allTopicsModelsArr = [MKAllTopicsModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         //刷新数据
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
         //停止下拉刷新
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         if (error.code == NSURLErrorCancelled) {
             //取消任务也会调用这个failure的block
+            return;
             MKLog(@"任务取消");
         }else {
             MKLog(@"请求错误");
         }
         //不管是取消还是请求错误都停止刷新动画
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
     }];
 }
 /**
@@ -112,36 +115,39 @@ static NSString *topicCellIdentifyId = @"topic_cell";
     //取消其他网络请求任务保证不同时执行下拉和上拉请求,防止出现问题
     [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
     
+    __weak typeof(self) weakSelf = self;
+    
     NSMutableDictionary *pamars = [NSMutableDictionary dictionary];
     pamars[@"a"] = @"list";
     pamars[@"c"] = @"data";
     pamars[@"maxtime"] = self.maxtime;
     pamars[@"type"] = @(self.topicType);
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:MKCommonURL parameters:pamars progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //MKWriteToPlist(responseObject, @"more_all_topics");
         //再次获取最后一条数据的maxtime
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         //获取更多的数据并转换成模型放于数组中
         NSArray<MKAllTopicsModel *> *moreArr = [MKAllTopicsModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         //将请求到的旧数据放于外层的模型数组的最后一个元素之后
-        [self.allTopicsModelsArr addObjectsFromArray:moreArr];
+        [weakSelf.allTopicsModelsArr addObjectsFromArray:moreArr];
         //刷新数据
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
         //停止下拉刷新
-        [self.tableView.mj_footer endRefreshing];
+        [weakSelf.tableView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         if (error.code == NSURLErrorCancelled) {
             //取消任务也会调用这个failure的block
+            return;
             MKLog(@"任务取消");
         }else {
             MKLog(@"请求错误");
         }
         //不管是取消还是请求错误都停止刷新动画
-        [self.tableView.mj_footer endRefreshing];
+        [weakSelf.tableView.mj_footer endRefreshing];
     }];
 }
 #pragma mark - Table view data source

@@ -13,6 +13,7 @@
 #import "MKSoundsViewController.h"
 #import "MKPictureViewController.h"
 #import "MKJokerViewController.h"
+#import "MKRecommndViewController.h"
 
 #define MKIndicaterViewH 2
 @interface MKEssenceViewController ()<UIScrollViewDelegate>
@@ -166,7 +167,8 @@
 }
 - (void)tagClick {
 
-    MKLogFunc
+    MKRecommndViewController *recommndVc = [[MKRecommndViewController alloc] init];
+    [self.navigationController pushViewController:recommndVc animated:YES];
 }
 #pragma mark - UIScrollerViewDelegate
 /**

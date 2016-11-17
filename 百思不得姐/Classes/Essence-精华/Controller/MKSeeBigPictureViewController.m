@@ -122,7 +122,7 @@ static NSString *MKBSBDJAlbumName = @"MK百思不得姐";
         //获取相册(可能是新建的)
         PHAssetCollection *myCollection = [weakSelf getAssetCollection];
         if (myCollection == nil) {
-            [self showError:@"相册创建失败!"];
+            [weakSelf showError:@"相册创建失败!"];
         }
         //4.保存图片到本应用相册
         [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{

@@ -16,7 +16,7 @@
 //头文件
 #import "UIView+SizeDecirbe.h"//尺寸描述
 #import "UIBarButtonItem+MKCommonBarButtonItem.h"//通用的导航栏按钮设置
-#import "UIImage+MKImageStrecth.h"//图片拉伸
+#import "UIImage+MKExtensions.h"//图片拉伸
 #import "UITextField+MKPlaceholderTextColor.h"//占位文字颜色
 #import "MKCommonConst.h"//全局常量
 #import "NSString+MKFileSize.h"//文件大小

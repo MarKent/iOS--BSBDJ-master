@@ -27,7 +27,7 @@
 		3E7075DF1DBE1A2600EC5B7F /* MKRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075DE1DBE1A2600EC5B7F /* MKRefreshFooter.m */; };
 		3E7075F51DBE833800EC5B7F /* NSString+MKFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */; };
 		3E7075F61DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */; };
-		3E7075F71DBE833800EC5B7F /* UIImage+MKImageStrecth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */; };
+		3E7075F71DBE833800EC5B7F /* UIImage+MKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EA1DBE833800EC5B7F /* UIImage+MKExtensions.m */; };
 		3E7075F81DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */; };
 		3E7075F91DBE833800EC5B7F /* UIView+SizeDecirbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075EE1DBE833800EC5B7F /* UIView+SizeDecirbe.m */; };
 		3E7075FA1DBE833800EC5B7F /* MKCommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7075F11DBE833800EC5B7F /* MKCommonConst.m */; };
@@ -57,6 +57,10 @@
 		3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B4B1D9AC77C00260EFF /* AppDelegate.m */; };
 		3EBF4B591D9AC77C00260EFF /* MKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */; };
 		3EBF4B5A1D9AC77C00260EFF /* MKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF4B521D9AC77C00260EFF /* MKTabBar.m */; };
+		3ED005F31DD240400007621C /* MKRecommndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED005F21DD240400007621C /* MKRecommndViewController.m */; };
+		3ED005F61DD240890007621C /* MKRecommndModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED005F51DD240890007621C /* MKRecommndModel.m */; };
+		3ED005FA1DD240AD0007621C /* MKRecommndCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED005F81DD240AD0007621C /* MKRecommndCell.m */; };
+		3ED005FB1DD240AD0007621C /* MKRecommndCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED005F91DD240AD0007621C /* MKRecommndCell.xib */; };
 		3ED223DB1D916F66005A3EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED223DA1D916F66005A3EAC /* main.m */; };
 		3ED223E41D916F66005A3EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E21D916F66005A3EAC /* Main.storyboard */; };
 		3ED223E61D916F66005A3EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED223E51D916F66005A3EAC /* Assets.xcassets */; };
@@ -124,8 +128,8 @@
 		3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFileSize.m"; sourceTree = "<group>"; };
 		3E7075E71DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MKCommonBarButtonItem.h"; sourceTree = "<group>"; };
 		3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MKCommonBarButtonItem.m"; sourceTree = "<group>"; };
-		3E7075E91DBE833800EC5B7F /* UIImage+MKImageStrecth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MKImageStrecth.h"; sourceTree = "<group>"; };
-		3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKImageStrecth.m"; sourceTree = "<group>"; };
+		3E7075E91DBE833800EC5B7F /* UIImage+MKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MKExtensions.h"; sourceTree = "<group>"; };
+		3E7075EA1DBE833800EC5B7F /* UIImage+MKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MKExtensions.m"; sourceTree = "<group>"; };
 		3E7075EB1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MKPlaceholderTextColor.h"; sourceTree = "<group>"; };
 		3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MKPlaceholderTextColor.m"; sourceTree = "<group>"; };
 		3E7075ED1DBE833800EC5B7F /* UIView+SizeDecirbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SizeDecirbe.h"; sourceTree = "<group>"; };
@@ -181,6 +185,13 @@
 		3EBF4B4E1D9AC77C00260EFF /* MKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBarController.m; sourceTree = "<group>"; };
 		3EBF4B511D9AC77C00260EFF /* MKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabBar.h; sourceTree = "<group>"; };
 		3EBF4B521D9AC77C00260EFF /* MKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabBar.m; sourceTree = "<group>"; };
+		3ED005F11DD240400007621C /* MKRecommndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecommndViewController.h; sourceTree = "<group>"; };
+		3ED005F21DD240400007621C /* MKRecommndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecommndViewController.m; sourceTree = "<group>"; };
+		3ED005F41DD240890007621C /* MKRecommndModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecommndModel.h; sourceTree = "<group>"; };
+		3ED005F51DD240890007621C /* MKRecommndModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecommndModel.m; sourceTree = "<group>"; };
+		3ED005F71DD240AD0007621C /* MKRecommndCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRecommndCell.h; sourceTree = "<group>"; };
+		3ED005F81DD240AD0007621C /* MKRecommndCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRecommndCell.m; sourceTree = "<group>"; };
+		3ED005F91DD240AD0007621C /* MKRecommndCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKRecommndCell.xib; sourceTree = "<group>"; };
 		3ED223D61D916F66005A3EAC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED223DA1D916F66005A3EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3ED223E31D916F66005A3EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -237,8 +248,8 @@
 				3E7075E61DBE833800EC5B7F /* NSString+MKFileSize.m */,
 				3E7075E71DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.h */,
 				3E7075E81DBE833800EC5B7F /* UIBarButtonItem+MKCommonBarButtonItem.m */,
-				3E7075E91DBE833800EC5B7F /* UIImage+MKImageStrecth.h */,
-				3E7075EA1DBE833800EC5B7F /* UIImage+MKImageStrecth.m */,
+				3E7075E91DBE833800EC5B7F /* UIImage+MKExtensions.h */,
+				3E7075EA1DBE833800EC5B7F /* UIImage+MKExtensions.m */,
 				3E7075EB1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.h */,
 				3E7075EC1DBE833800EC5B7F /* UITextField+MKPlaceholderTextColor.m */,
 				3E7075ED1DBE833800EC5B7F /* UIView+SizeDecirbe.h */,
@@ -301,6 +312,8 @@
 				3E67B8531DCA5D050025C27A /* MKSeeBigPictureViewController.h */,
 				3E67B8541DCA5D050025C27A /* MKSeeBigPictureViewController.m */,
 				3E67B8551DCA5D050025C27A /* MKSeeBigPictureViewController.xib */,
+				3ED005F11DD240400007621C /* MKRecommndViewController.h */,
+				3ED005F21DD240400007621C /* MKRecommndViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +327,8 @@
 				3E3D902D1DC4E5C000C7A77B /* MKCommentModel.m */,
 				3E3D902F1DC4E5C900C7A77B /* MKUserModel.h */,
 				3E3D90301DC4E5C900C7A77B /* MKUserModel.m */,
+				3ED005F41DD240890007621C /* MKRecommndModel.h */,
+				3ED005F51DD240890007621C /* MKRecommndModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +350,9 @@
 				3E65CA8F1DC738F700354AD4 /* MKTopicVideoContentView.h */,
 				3E65CA901DC738F700354AD4 /* MKTopicVideoContentView.m */,
 				3E65CA941DC7390E00354AD4 /* MKTopicVideoContentView.xib */,
+				3ED005F71DD240AD0007621C /* MKRecommndCell.h */,
+				3ED005F81DD240AD0007621C /* MKRecommndCell.m */,
+				3ED005F91DD240AD0007621C /* MKRecommndCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -724,6 +742,7 @@
 				3E8E00B81DBF5BA60087C052 /* MKTopicCell.xib in Resources */,
 				3E67B8571DCA5D050025C27A /* MKSeeBigPictureViewController.xib in Resources */,
 				3EF679A01DAD611A00D37AD4 /* MKWebViewController.xib in Resources */,
+				3ED005FB1DD240AD0007621C /* MKRecommndCell.xib in Resources */,
 				3E65CA931DC7390600354AD4 /* MKTopicSoundsContentView.xib in Resources */,
 				3ED223E41D916F66005A3EAC /* Main.storyboard in Resources */,
 			);
@@ -809,12 +828,13 @@
 				3E907C4C1DAC300D0087B797 /* MKMeSquareButton.m in Sources */,
 				3E7075F51DBE833800EC5B7F /* NSString+MKFileSize.m in Sources */,
 				3E65CA911DC738F700354AD4 /* MKTopicVideoContentView.m in Sources */,
-				3E7075F71DBE833800EC5B7F /* UIImage+MKImageStrecth.m in Sources */,
+				3E7075F71DBE833800EC5B7F /* UIImage+MKExtensions.m in Sources */,
 				3EF6799F1DAD611A00D37AD4 /* MKWebViewController.m in Sources */,
 				3E6C41591D9C388200C4155E /* MKRecomendFollowViewController.m in Sources */,
 				3E7075F91DBE833800EC5B7F /* UIView+SizeDecirbe.m in Sources */,
 				3E908E841DA7C3D5006A7CD7 /* MKQuickLoginButton.m in Sources */,
 				3EBF4B571D9AC77C00260EFF /* MKNewViewController.m in Sources */,
+				3ED005F31DD240400007621C /* MKRecommndViewController.m in Sources */,
 				3E907C461DABFE3C0087B797 /* MKMeSpuare.m in Sources */,
 				3E258CA01DBD20BD00756AA4 /* MKRefreshHeader.m in Sources */,
 				3E7075DF1DBE1A2600EC5B7F /* MKRefreshFooter.m in Sources */,
@@ -823,6 +843,7 @@
 				3E908E801DA6B18B006A7CD7 /* MKLoginViewController.m in Sources */,
 				3EB5AAFC1DB8E07200FC2177 /* MKSoundsViewController.m in Sources */,
 				3E67B8521DCA53290025C27A /* MKBaseTopicViewController.m in Sources */,
+				3ED005FA1DD240AD0007621C /* MKRecommndCell.m in Sources */,
 				3E7075FA1DBE833800EC5B7F /* MKCommonConst.m in Sources */,
 				3E907C401DAB6C2A0087B797 /* MKMeCell.m in Sources */,
 				3EBF4B581D9AC77C00260EFF /* AppDelegate.m in Sources */,
@@ -835,6 +856,7 @@
 				3EB5AAF61DB8E03900FC2177 /* MKAllViewController.m in Sources */,
 				3ED223DB1D916F66005A3EAC /* main.m in Sources */,
 				3EBF4B551D9AC77C00260EFF /* MKFollowViewController.m in Sources */,
+				3ED005F61DD240890007621C /* MKRecommndModel.m in Sources */,
 				3E3D90311DC4E5C900C7A77B /* MKUserModel.m in Sources */,
 				3EB5AAF91DB8E05300FC2177 /* MKVideoViewController.m in Sources */,
 				3E0D86EF1DBBBF2E00049924 /* MKAllTopicsModel.m in Sources */,

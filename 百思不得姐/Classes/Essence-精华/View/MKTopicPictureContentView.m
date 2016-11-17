@@ -65,9 +65,6 @@
     
     //是否是动态图
     self.gifImageView.hidden = !topicModel.is_gif;
-    
-    
-    
     /*
     //判断是否是动态图,隐藏或显示gif图标
     //if ([topicModel.small_image.lowercaseString hasSuffix:@"gif"])//后缀判断

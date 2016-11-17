@@ -77,7 +77,11 @@
     _allTopicModel = allTopicModel;
     
     //赋值
-    [self.profileImage sd_setImageWithURL:[NSURL URLWithString:self.allTopicModel.profile_image] placeholderImage:MKImageName(@"defaultUserIcon")];
+    UIImage *placeholderImage = [UIImage mk_circleImageWithName:@"defaultUserIcon"];
+    [self.profileImage sd_setImageWithURL:[NSURL URLWithString:self.allTopicModel.profile_image] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if (image == nil) return;
+        self.profileImage.image = [image mk_circleImage];
+    }];
     self.nameLabel.text = allTopicModel.name;
     self.creatTime.text = allTopicModel.created_at;
     self.text_label.text = allTopicModel.text;

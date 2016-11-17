@@ -12,3 +12,6 @@
 UIKIT_EXTERN CGFloat const MKMargin;
 /** 通用小间距 */
 UIKIT_EXTERN CGFloat const MKSmallMargin;
+
+/** 通用的URL */
+UIKIT_EXTERN NSString * const MKCommonURL;
